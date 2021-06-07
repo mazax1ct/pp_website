@@ -1,0 +1,45 @@
+.quantity
+  align-items: center
+  display: flex
+  width: 192px
+
+  &__button,
+  &__input
+    background-color: $brand_grey
+    border: none
+    height: 45px
+    padding: 0
+
+  &__button
+    align-items: center
+    cursor: pointer
+    display: flex
+    padding: 0
+    transition: background-color 0.3s
+    width: 72px
+
+    &:first-child
+      justify-content: flex-end
+      padding-right: 10px
+
+    &:last-child
+      padding-left: 10px
+
+    &:hover,
+    &:focus
+      background-color: darken($brand_grey, 5%)
+
+      svg
+        fill: $brand_green
+
+    svg
+      fill: $text_color
+      height: 12px
+      transition: fill 0.3s
+      width: 12px
+
+  &__input
+    font-size: 22px
+    font-weight: 400
+    text-align: center
+    width: 48px

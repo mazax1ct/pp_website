@@ -1,0 +1,191 @@
+.button
+  align-items: center
+  background-color: $brand_green
+  border: 1px solid $brand_green
+  border-radius: 0
+  box-shadow: none
+  color: #fff
+  cursor: pointer
+  display: inline-flex
+  font-family: 'FavoritC', Arial, sans-serif
+  font-size: 16px
+  font-weight: 300
+  height: 38px
+  justify-content: center
+  line-height: 1.5
+  padding: 8px 16px 6px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s
+  vertical-align: middle
+
+  &--big
+    height: 45px
+    padding: 11px 24px 10px
+
+  &:hover,
+  &:focus,
+  &:active
+    background-color: transparent
+    border-color: $brand_green
+    color: $brand_green
+
+    .arrow
+      fill: $brand_green
+
+  &:disabled,
+  &.disabled
+    background-color: $brand_grey
+    border-color: transparent
+    color: #fff
+    cursor: default
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $brand_grey
+      border-color: transparent
+      color: #fff
+      cursor: default
+      outline: none
+
+    .arrow
+      fill: #fff
+
+  .arrow
+    fill: #fff
+    height: 7px
+    margin-left: 14px
+    margin-top: 2px
+    min-width: 18px
+    transition: fill 0.3s
+    width: 18px
+
+  &--inverted
+    background-color: transparent
+    color: $brand_green
+
+    .arrow
+      fill: $brand_green
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $brand_green
+      border-color: $brand_green
+      color: #fff
+
+      .arrow
+        fill: #fff
+
+    &:disabled,
+    &.disabled
+      background-color: $brand_grey
+      border-color: transparent
+      color: #fff
+      cursor: default
+
+      &:hover,
+      &:focus,
+      &:active
+        background-color: $brand_grey
+        border-color: transparent
+        color: #fff
+        cursor: default
+        outline: none
+
+      .arrow
+        fill: #fff
+
+  &--black
+    background-color: transparent
+    border-color: $text_color
+    color: $text_color
+
+    .arrow
+      fill: $text_color
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $brand_green
+      border-color: $brand_green
+      color: #fff
+
+      .arrow
+        fill: #fff
+
+    &:disabled,
+    &.disabled
+      background-color: $brand_grey
+      border-color: transparent
+      color: #fff
+      cursor: default
+
+      &:hover,
+      &:focus,
+      &:active
+        background-color: $brand_grey
+        border-color: transparent
+        color: #fff
+        cursor: default
+        outline: none
+
+      .arrow
+        fill: #fff
+
+  &--add_cart
+    height: 45px
+    padding-left: 0
+    padding-right: 0
+    width: 45px
+
+    .cart
+      fill: #fff
+      height: 20px
+      transition: fill 0.3s
+      width: 20px
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $brand_rose
+      border-color: $brand_rose
+      color: $brand_green
+
+      .cart
+        fill: $brand_green
+
+  &--added_cart
+    background-color: $light_grey
+    border-color: $light_grey
+    color: $brand_green
+    height: 45px
+    padding-left: 0
+    padding-right: 0
+    width: 45px
+
+    .cart
+      fill: $brand_green
+      height: 20px
+      transition: fill 0.3s
+      width: 20px
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: $brand_rose
+      border-color: $brand_rose
+      color: $brand_green
+
+      .cart
+        fill: $brand_green
+
+  &--add_cart.button--big,
+  &--added_cart.button--big
+    padding-left: 24px
+    padding-right: 24px
+    width: auto
+
+    .cart
+      margin-right: 16px
