@@ -1,0 +1,170 @@
+body {
+  color: $text_color;
+  font-family: 'FavoritC', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media(min-width: 1350px) {
+    font-size: 16px;
+    letter-spacing: -0.24px;
+  }
+  @media(min-width: 1900px) {
+    font-size: 18px;
+    letter-spacing: -0.27px;
+  }
+}
+
+a {
+  color: $text_color;
+  transition: color 0.3s;
+
+  &:focus,
+  &:hover {
+    color: $brand_green;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $brand_green;
+  }
+}
+
+b,
+strong {
+  font-weight: 400;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h1,
+h1 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  @media(min-width: 1024px) {
+    margin-bottom: 48px;
+  }
+  @media(min-width: 1350px) {
+    margin-bottom: 60px;
+  }
+}
+
+.h2,
+h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  @media(min-width: 1024px) {
+    margin-bottom: 48px;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.responsive-table,
+.table-responsive,
+ol,
+p,
+table,
+ul {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+
+  &:not([class]) {
+    li {
+      padding-left: 16px;
+      position: relative;
+
+      &::before {
+        background-color: $text_color;
+        content: '';
+        height: 4px;
+        left: 0;
+        position: absolute;
+        top: 0.85em;
+        transform: translateY(-50%);
+        width: 4px;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  text-align: left;
+  width: 100%;
+
+  tr:nth-child(even) {
+    background-color: rgba($brand_grey, 0.3);
+  }
+
+  td,
+  th {
+    border: none;
+    padding: 16px;
+    vertical-align: middle;
+  }
+
+  th {
+    font-weight: 400;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.succsess {
+  color: $brand_green;
+}
+
+.warning {
+  color: $red_color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

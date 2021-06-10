@@ -1,0 +1,96 @@
+.checkbox-label,
+.radio-label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  @media(min-width: 1350px) {
+    padding-left: 35px;
+  }
+  @media(min-width: 1900px) {
+    font-size: 16px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+
+    &:focus {
+      & + .checkbox-icon,
+      & + .radio-icon {
+        border-color: $brand_green;
+      }
+
+      & + .radio-icon::before {
+        background-color: $brand_green;
+      }
+    }
+  }
+}
+
+.checkbox-icon,
+.radio-icon {
+  cursor: pointer;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 0.35em;
+  transition: border-color 0.3s;
+  width: 12px;
+}
+
+.checkbox-icon {
+  border-radius: 2px;
+  border: 1px solid $brand_grey;
+}
+
+.radio-icon {
+  border-radius: 50%;
+  border: 1px solid $text_color;
+}
+
+input[type="checkbox"] {
+  &:checked + .checkbox-icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 9'%3E%3Cpath fill='%2326A155' d='M4.4,8.5C4.2,8.5,4.1,8.4,4,8.3L0.6,4.8c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0l3,3.2l6.1-6.6c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7l-6.4,7C4.6,8.4,4.5,8.5,4.4,8.5z'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+input[type="radio"] {
+  &:checked + .radio-icon::before {
+    background-color: $text_color;
+    border-radius: 50%;
+    content: '';
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+  }
+}
+
+.checkbox-text,
+.radio-text {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:disabled ~ .checkbox-text,
+input[type="checkbox"].disabled ~ .checkbox-text,
+input[type="checkbox"]:disabled ~ .checkbox-icon,
+input[type="checkbox"].disabled ~ .checkbox-icon,
+input[type="radio"]:disabled ~ .radio-text,
+input[type="radio"].disabled ~ .radio-text,
+input[type="radio"]:disabled ~ .radio-icon,
+input[type="radio"].disabled ~ .radio-icon {
+  cursor: default;
+  opacity: 0.5;
+}
