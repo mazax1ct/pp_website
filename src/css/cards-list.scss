@@ -1,0 +1,23 @@
+@import "base/_variables.scss";
+
+.cards-list {
+    display: grid;
+    row-gap: 40px;
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: 1024px) {
+        column-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+    }
+    @media(min-width: 1280px) {
+        column-gap: 30px;
+    }
+    @media(min-width: 1350px) {
+        column-gap: 40px;
+    }
+}
