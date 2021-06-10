@@ -32,6 +32,8 @@
     &__center {
         max-width: 415px;
         margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
         @media(min-width: 768px) {
             margin-bottom: 0;
