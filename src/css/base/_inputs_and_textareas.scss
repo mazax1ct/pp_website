@@ -1,6 +1,9 @@
 .input-label {
     display: block;
-    margin-bottom: 14px;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
 }
 
 .input,
@@ -24,6 +27,21 @@
 
         &:focus {
             border-color: $red_color;
+        }
+
+        &::-webkit-input-placeholder {
+            color: rgba($red_color, 0.3);
+            opacity: 1;
+        }
+
+        &::-moz-placeholder {
+            color: rgba($red_color, 0.3);
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: rgba($red_color, 0.3);
+            opacity: 1;
         }
     }
 

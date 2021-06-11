@@ -7,7 +7,7 @@
     margin: -30px auto 14px;
     max-width: 1006px;
     width: 81.5%;
-    @media(min-width: 1024px) {
+    @media(min-width: $md) {
         display: flex;
         flex-wrap: wrap;
     }

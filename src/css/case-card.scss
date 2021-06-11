@@ -1,0 +1,66 @@
+@import "base/_variables.scss";
+
+.case-card {
+    border: 1px solid $brand_grey;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        .case-card__image {
+            transform: scale(1.15);
+        }
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            .case-card__image {
+                transform: scale(1.2);
+            }
+
+            .case-card__title {
+                color: $dark_grey;
+            }
+        }
+    }
+
+    &__image-block {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__image {
+        transform: scale(1);
+        transition: transform 0.3s;
+    }
+
+    &__text-block {
+        display: block;
+        padding: 21px 15px 15px;
+    }
+
+    &__tag {
+        color: $dark_grey;
+        display: block;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    &__title {
+        color: $text_color;
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 1.5px;
+        transition: color 0.3s;
+        text-transform: uppercase;
+    }
+}

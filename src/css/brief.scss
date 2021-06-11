@@ -1,0 +1,48 @@
+@import "base/_variables.scss";
+
+.brief {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1006px;
+    @media(min-width: $md) {
+        display: flex;
+        padding-top: 22px;
+    }
+
+    &__column {
+        &:first-child {
+            margin-bottom: 50px;
+            @media(min-width: $md) {
+                margin-bottom: 48px;
+            }
+        }
+
+        &:nth-child(2) {
+            @media(min-width: $md) {
+                padding-left: 35px;
+            }
+        }
+        @media(min-width: $md) {
+            width: 50%;
+        }
+    }
+
+    &__section {
+        @media(min-width: $md) {
+            max-width: 400px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__note {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}

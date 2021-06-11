@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Бриф - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/brief.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="individual.html">Индивидуальный</a></li>
+            <li class="breadcrumbs__item">Бриф</li>
+        </ul>
+
+        <div class="container">
+            <h1 class="page-title">Бриф для создания индивидуального набора</h1>
+
+            <form class="brief" action="" method="">
+                <div class="brief__column">
+                    <div class="brief__section">
+                        <h2>Заказчик</h2>
+                        <label class="input-label">
+                            <input class="input" type="text" name="company_name" value="" placeholder="Наименование компании" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="fio" value="" placeholder="ФИО" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input error" type="text" name="place" value="" placeholder="Должность" />
+                        </label>
+                    </div>
+                    <div class="brief__section">
+                        <h2>Контактная информация</h2>
+                        <label class="input-label">
+                            <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="email" value="" placeholder="Электронная почта" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="links" value="" placeholder="Сайт, соцсети" />
+                        </label>
+                    </div>
+                    <div class="brief__section">
+                        <h2>О компании</h2>
+                        <label class="input-label">
+                            <textarea class="textarea" name="mission" placeholder="Миссия, видение компании"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea" name="materials_links" placeholder="Фирменные цвета + лого и брендбук (ссылки на материалы)"></textarea>
+                        </label>
+                    </div>
+                    <div class="brief__section">
+                        <h2>Получатель</h2>
+                        <label class="input-label">
+                            <textarea class="textarea" name="brend" placeholder="Бренд, торговая марка (указать марку, для которой необходимо сделать подарочный набор)"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea" name="about_receiver" placeholder="Получатель (пол, возраст, профессия, доход, интересы)"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="brief__column">
+                    <div class="brief__section">
+                        <h2>О наборе</h2>
+                        <label class="input-label">
+                            <textarea class="textarea" name="about_event" placeholder="Опишите событие для которого необходимы подарки (праздник, тематика)"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea" name="color_scheme" placeholder="Допустимая цветовая гамма"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="budget " value="" placeholder="Бюджет одного подарка" />
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea error" name="wishes" placeholder="Желамое наполнение подарка (еда, эко, гаджеты, посуда, спортивные товары...)"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="circulation " value="" placeholder="Тираж" />
+                        </label>
+                    </div>
+                    <div class="brief__section">
+                        <h2>Стоп-лист</h2>
+                        <label class="input-label">
+                            <textarea class="textarea" name="taboo_scheme" placeholder="Недопустимая цветовая гамма (указать причину)"></textarea>
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea textarea--big error" name="taboo_products"
+                              placeholder="Укажите продукцию, которую не нужно предлагать и почему. Если есть ограничения по товарному ассортименту, темам и цветам - то укажите их"></textarea>
+                        </label>
+                    </div>
+                    <div class="brief__section">
+                        <p class="brief__note warning">Для создания заявки все поля брифа обязательно<br> должны быть заполнены</p>
+                        <button class="button button--black button--big" type="submit" disabled>
+                            Отправить
+                            <svg class="arrow">
+                                <use xlink:href="#arrow_next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты подключаемых на странице блоков-->
+
+</body>
+
+</html>

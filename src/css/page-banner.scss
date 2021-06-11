@@ -13,8 +13,8 @@
     padding-top: 35px;
     padding-bottom: 35px;
     text-align: center;
-    @media(min-width: 1024px) {
-        margin-bottom: 70px;
+    @media(min-width: $md) {
+        margin-bottom: 50px;
     }
 
     &__container {
@@ -24,7 +24,7 @@
         max-width: 500px;
         padding: 35px;
         width: 100%;
-        @media(min-width: 1024px) {
+        @media(min-width: $md) {
             max-width: 730px;
             padding-left: 60px;
             padding-right: 60px;
@@ -36,7 +36,7 @@
         border-bottom: 0.5px solid rgba(#000, 0.3);
         font-size: 30px;
         margin-bottom: 22px;
-        @media(min-width: 1024px) {
+        @media(min-width: $md) {
             font-size: 50px;
         }
     }

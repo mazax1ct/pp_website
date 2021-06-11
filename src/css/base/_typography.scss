@@ -6,11 +6,11 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    @media(min-width: 1350px) {
+    @media(min-width: $xl) {
         font-size: 16px;
         letter-spacing: -0.24px;
     }
-    @media(min-width: 1900px) {
+    @media(min-width: $xxl) {
         font-size: 18px;
         letter-spacing: -0.27px;
     }
