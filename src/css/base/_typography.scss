@@ -77,6 +77,9 @@ table,
 ul {
     margin-top: 0;
     margin-bottom: 24px;
+    @media(min-width: $xxl) {
+        margin-bottom: 32px;
+    }
 
     &:last-child {
         margin-bottom: 0;

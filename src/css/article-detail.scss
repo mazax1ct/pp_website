@@ -1,0 +1,24 @@
+@import "base/_variables.scss";
+
+.article-detail {
+    &__bottom {
+        margin-top: 40px;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 65px;
+        }
+    }
+
+    &__date {
+        color: $dark_grey;
+        font-size: 16px;
+        display: block;
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+        }
+    }
+}

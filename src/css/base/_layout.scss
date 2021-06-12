@@ -49,3 +49,21 @@ body {
         padding-right: 24px;
     }
 }
+
+.two-columns {
+    @media(min-width: $md) {
+        display: grid;
+    }
+    @media(min-width: $sm) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+
+    &__column {
+        margin-bottom: 24px;
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            max-width: 585px;
+        }
+    }
+}

@@ -66,6 +66,11 @@
         min-width: 18px;
         transition: fill 0.3s;
         width: 18px;
+
+        &:first-child {
+            margin-left: 0;
+            margin-right: 14px;
+        }
     }
 
     &--inverted {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Индивидуальный - подарки просто</title>
+    <title>Блог - подарки просто</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <!--стили подключаемых на страние блоков-->
-    <link rel="stylesheet" href="css/page-banner.css" />
-    <link rel="stylesheet" href="plugins_css/swiper-bundle.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/case-card.css" />
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/articles-list.css" />
+    <link rel="stylesheet" href="css/article.css" />
+    <link rel="stylesheet" href="css/more-block.css" />
 </head>
 
 <body>
@@ -140,97 +140,150 @@
     </header>
 
     <main class="page-content">
-        <section class="page-banner" style="background-image: url('images/content/page-banner/img_2.jpg')">
-            <div class="page-banner__container">
-                <h1 class="page-banner__title">Ваш уникальный подарок!</h1>
-                <p class="page-banner__text">Заполните короткий бриф и мы поможем Вам создать индивидуальный подарок для любого случая</p>
-                <a class="button" href="brief.html">
-                    Заполить бриф
-                    <svg class="arrow">
-                        <use xlink:href="#arrow_next"></use>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
         <div class="container">
-            <div class="side-indents">
-                <h2>Примеры наших работ</h2>
-                <div class="slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_3.jpg" srcset="images/content/cards/img_3@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                        </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">День Родждения</span>
-                                            <span class="case-card__title-text">90's pok</span>
-                                        </span>
-                                    </a>
-                                </h2>
-                            </article>
+            <h1 class="page-title">Блог</h1>
+
+            <div class="articles-list">
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_1.jpg" srcset="images/content/blog/img_1@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
                         </div>
-                        <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_4.jpg" srcset="images/content/cards/img_4@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                        </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Новоселье</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
-                                    </a>
-                                </h2>
-                            </article>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_3.jpg" srcset="images/content/cards/img_3@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                        </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Коллегам</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
-                                    </a>
-                                </h2>
-                            </article>
+                    </article>
+                </div>
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
                         </div>
-                        <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_4.jpg" srcset="images/content/cards/img_4@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                        </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Подарок маме</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
-                                    </a>
-                                </h2>
-                            </article>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <button class="slider__prev" type="button" title="Назад">
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_prev"></use>
-                        </svg>
-                    </button>
-                    <button class="slider__next" type="button" title="Вперёд">
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_next"></use>
-                        </svg>
-                    </button>
+                    </article>
+                </div>
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_1.jpg" srcset="images/content/blog/img_1@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
+                        </div>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
+                        </div>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_1.jpg" srcset="images/content/blog/img_1@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
+                        </div>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="articles-list__item">
+                    <article class="article">
+                        <div class="article__image">
+                            <img src="images/content/blog/img_2.jpg" srcset="images/content/blog/img_2@2x.jpg" alt="Заголовок интересной статьи о подарках в две строки">
+                        </div>
+                        <div class="article__info">
+                            <h2 class="article__title"><a class="article__link" href="blog-detail.html">Заголовок интересной статьи о подарках в две строки</a></h2>
+                            <p class="article__preview-text">
+                                IPhone flannel selfies, next level messenger bag franzen actually roof party seitan plaid 8-bit sartorial intelligentsia. Semiotics celiac migas salvia gluten-free kitsch pour-over
+                                microdosing cronut taxidermy. Yr letterpress raw denimr..
+                            </p>
+                            <div class="article__bottom">
+                                <time class="article__date" datetime="2021-05-13">13 мая 2021</time>
+                                <span class="article__pseudo-link">
+                                    Читать
+                                    <svg class="arrow">
+                                        <use xlink:href="#arrow_next"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
+            <p class="more-block"><a class="more-block__button button button--inverted" href="javascript:void(0)">Показать ещё 6 из 50</a></p>
         </div>
     </main>
 
@@ -281,29 +334,6 @@
     <script src="js/header.js"></script>
     <script src="js/preloader.js"></script>
 
-    <!--скрипты подключаемых на странице блоков-->
-    <script src="js/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            breakpoints: {
-                767: {
-                    slidesPerView: 2
-                },
-                1023: {
-                    slidesPerView: 3
-                },
-                1199: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            },
-            navigation: {
-                nextEl: '.slider__next',
-                prevEl: '.slider__prev',
-            }
-        });
-    </script>
 </body>
 
 </html>

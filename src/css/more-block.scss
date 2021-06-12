@@ -1,0 +1,9 @@
+@import "base/_variables.scss";
+
+.more-block {
+    text-align: center;
+
+    &__button {
+        min-width: 220px;
+    }
+}

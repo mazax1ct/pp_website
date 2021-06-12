@@ -3,7 +3,7 @@
 .cards-list {
     display: grid;
     row-gap: 40px;
-    @media(min-width: 768px) {
+    @media(min-width: $sm) {
         grid-template-columns: repeat(2, 1fr);
     }
     @media(min-width: $md) {
@@ -19,5 +19,11 @@
     }
     @media(min-width: $xl) {
         column-gap: 40px;
+    }
+
+    &__item {
+        @media(min-width: $sm) {
+            display: flex;
+        }
     }
 }

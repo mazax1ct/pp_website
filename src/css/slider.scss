@@ -12,6 +12,11 @@
         margin-bottom: 75px;
     }
 
+    .swiper-slide {
+        display: flex;
+        height: auto;
+    }
+
     &__next,
     &__prev {
         align-items: center;

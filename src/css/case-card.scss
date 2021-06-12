@@ -2,6 +2,8 @@
 
 .case-card {
     border: 1px solid $brand_grey;
+    display: flex;
+    flex-direction: column;
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +22,8 @@
 
         &:focus,
         &:hover {
+            color: $dark_grey;
+
             .case-card__image {
                 transform: scale(1.2);
             }
@@ -50,17 +54,22 @@
         color: $dark_grey;
         display: block;
         font-size: 16px;
-        line-height: 1.8;
+        line-height: 1.5;
     }
 
     &__title {
-        color: $text_color;
-        display: block;
+        display: flex;
+        flex-grow: 1;
         font-size: 18px;
-        font-weight: 400;
         line-height: 1.4;
+        margin: 0;
         letter-spacing: 1.5px;
         transition: color 0.3s;
+    }
+
+    &__title-text {
+        display: block;
+        font-weight: 400;
         text-transform: uppercase;
     }
 }
