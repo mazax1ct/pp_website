@@ -45,6 +45,19 @@
             transition: fill 0.3s;
             width: 12px;
         }
+
+        &--transparent {
+            background-color: transparent;
+
+            &:focus,
+            &:hover {
+                background-color: $brand_grey;
+
+                svg {
+                    fill: $brand_green;
+                }
+            }
+        }
     }
 
     &__input {
@@ -52,5 +65,13 @@
         font-weight: 400;
         text-align: center;
         width: 48px;
+
+        &--transparent {
+            background-color: transparent;
+        }
+    }
+
+    &--small {
+        width: 157px;
     }
 }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Корзина - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/cart-item.css" />
+    <link rel="stylesheet" href="css/quantity.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Корзина</h1>
+
+            <div class="cart">
+                <div class="cart__list">
+                    <div class="cart-item">
+                        <div class="cart-item__product">
+                            <a class="cart-item__product-link" href="detail.html">
+                                <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="alt">
+                            </a>
+                            <div class="cart-item__product-info">
+                                <p class="cart-item__product-tag">Просто набор</p>
+                                <p class="cart-item__product-title">90's pok pok bicycle rights</p>
+                                <span class="cart-item__product-discount">30 %</span>
+                            </div>
+                        </div>
+                        <div class="cart-item__quantity-block">
+                            <div class="quantity quantity--small">
+                                <button class="quantity__button quantity__button--transparent" type="button" title="Уменьшить">
+                                    <svg>
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="quantity__input quantity__input--transparent" type="text" value="1" readonly>
+                                <button class="quantity__button quantity__button--transparent" type="button" title="Увеличить">
+                                    <svg>
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item__price-block">
+                            <p class="cart-item__price">144 200 ₽</p>
+                        </div>
+                        <div class="cart-item__cost-block">
+                            <p class="cart-item__price">1 820 400 ₽</p>
+                        </div>
+                        <div class="cart-item__delete-block">
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg>
+                                    <use xlink:href="#crest"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item__product">
+                            <a class="cart-item__product-link" href="detail.html">
+                                <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="alt">
+                            </a>
+                            <div class="cart-item__product-info">
+                                <p class="cart-item__product-tag">Просто набор</p>
+                                <p class="cart-item__product-title">90's pok pok bicycle rights</p>
+                            </div>
+                        </div>
+                        <div class="cart-item__quantity-block">
+                            <div class="quantity quantity--small">
+                                <button class="quantity__button quantity__button--transparent" type="button" title="Уменьшить">
+                                    <svg>
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="quantity__input quantity__input--transparent" type="text" value="1" readonly>
+                                <button class="quantity__button quantity__button--transparent" type="button" title="Увеличить">
+                                    <svg>
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item__price-block">
+                            <p class="cart-item__price cart-item__price--discount">4 200 ₽</p>
+                            <p class="cart-item__price cart-item__price--old">5 000 ₽</p>
+                        </div>
+                        <div class="cart-item__cost-block">
+                            <p class="cart-item__price">4 200 ₽</p>
+                        </div>
+                        <div class="cart-item__delete-block">
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg>
+                                    <use xlink:href="#crest"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__result">
+                    <p class="cart__result-title">Ваш заказ</p>
+                    <p class="cart__row">
+                        <span>Количество</span>
+                        <span class="cart__result-value">3</span>
+                    </p>
+                    <p class="cart__row">
+                        <span>Скидка</span>
+                        <span class="cart__result-value">800 ₽</span>
+                    </p>
+                    <p class="cart__row cart__row--price">
+                        <span>Стоимость</span>
+                        <span class="cart__result-value">12 600 ₽</span>
+                    </p>
+                    <a class="button button--big" type="button" href="checkout.html">
+                        <span>Оформить заказ</span>
+                        <svg class="arrow">
+                            <use xlink:href="#arrow_next"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

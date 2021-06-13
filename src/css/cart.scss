@@ -1,0 +1,52 @@
+@import "base/_variables.scss";
+
+.cart {
+    @media(min-width: $md) {
+        display: flex;
+    }
+
+    &__list {
+        @media(min-width: $md) {
+            flex-grow: 1;
+            padding-right: 20px;
+        }
+        @media(min-width: $lg) {
+            padding-right: 40px;
+        }
+    }
+
+    &__result {
+        background-color: $light_grey;
+        padding: 25px 35px 38px;
+        @media(min-width: $md) {
+            min-width: 290px;
+            width: 290px;
+        }
+    }
+
+    &__result-title {
+        border-bottom: 1px solid rgba(#000, 0.2);
+        font-size: 22px;
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        &--price {
+            border-top: 1px dashed rgba(#000, 0.2);
+            margin-bottom: 37px;
+            padding-top: 14px;
+        }
+    }
+
+    &__result-value {
+        font-weight: 400;
+        @media(min-width: $xxl) {
+            font-size: 20px;
+        }
+    }
+}

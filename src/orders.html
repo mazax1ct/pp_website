@@ -21,6 +21,8 @@
     <!--стили подключаемых на страние блоков-->
     <link rel="stylesheet" href="css/page-title.css" />
     <link rel="stylesheet" href="css/personal.css" />
+    <link rel="stylesheet" href="css/orders.css" />
+    <link rel="stylesheet" href="css/more-block.css" />
 </head>
 
 <body>
@@ -54,14 +56,123 @@
                     </ul>
                 </div>
 
-                <div class="order-list">
+                <div class="orders-list">
                     <div class="order">
-                        <div class="order__top"></div>
-                        <p class="order__date">Заказ от 11.05.2021</p>
-                        <p class="order__price">57 900 ₽</p>
-                        <button class="order__reorder" type="button" title="Повторить"></button>
+                        <div class="order__top">
+                            <p class="order__date">Заказ от 11.05.2021</p>
+                            <p class="order__price">57 900 ₽</p>
+                            <button class="order__reorder" type="button" title="Повторить">
+                                <svg>
+                                    <use xlink:href="#reorder"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="order__middle">
+                            <p class="order__number">№ XX-78-5690</p>
+                            <button class="js-list-toggler order__list-toggler" type="button" title="Открыть">
+                                10 поз.
+                                <svg>
+                                    <use xlink:href="#chevron_down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="order__goods-list">
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="order__dropdown">
+                            <div class="order__goods-list">
+                                <div class="order__goods-item">
+                                    <a href="detail.html">
+                                        <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                    </a>
+                                </div>
+                                <div class="order__goods-item">
+                                    <a href="detail.html">
+                                        <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                    </a>
+                                </div>
+                                <div class="order__goods-item">
+                                    <a href="detail.html">
+                                        <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                    </a>
+                                </div>
+                                <div class="order__goods-item">
+                                    <a href="detail.html">
+                                        <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                    </a>
+                                </div>
+                                <div class="order__goods-item">
+                                    <a href="detail.html">
+                                        <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="order__top">
+                            <p class="order__date">Заказ от 06.04.2021</p>
+                            <p class="order__price">21 300 ₽</p>
+                            <button class="order__reorder" type="button" title="Повторить">
+                                <svg>
+                                    <use xlink:href="#reorder"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="order__middle">
+                            <p class="order__number">№ XX-78-5690</p>
+                            <p class="order__list-count">4 поз.</p>
+                        </div>
+                        <div class="order__goods-list">
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                            <div class="order__goods-item">
+                                <a href="detail.html">
+                                    <img src="images/content/orders/img.jpg" srcset="images/content/orders/img@2x.jpg 2x" alt="alt">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <p class="more-block"><a class="more-block__button button button--inverted" href="javascript:void(0)">Показать ещё 6 из 19</a></p>
             </div>
         </div>
     </main>
@@ -70,7 +181,7 @@
 
     <!--обязательные скрипты-->
     //= template/scripts.html
-
+    <script src="js/orders.js"></script>
 </body>
 
 </html>
