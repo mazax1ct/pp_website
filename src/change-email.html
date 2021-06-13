@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Изменить e-mail - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/personal.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <div class="personal">
+                <h1 class="page-title">Изменить e-mail</h1>
+                <div class="left-menu">
+                    <ul class="left-menu__list">
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="personal.html">Профиль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link is-active">Изменить e-mail</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="change-pass.html">Изменить пароль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="orders.html">История заказов</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <label class="input-label">
+                            <input class="input" type="text" name="new_email" value="" placeholder="Новый e-mail" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="password" name="pass" value="" placeholder="Пароль" />
+                        </label>
+                        <div class="form__buttons">
+                            <button class="button" type="submit">Сохранить изменения</button>
+                        </div>
+                        <p class="form__note">Вы получите письмо, содержащее ссылку для подтвержения нового e-mail адреса</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

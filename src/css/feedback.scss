@@ -1,0 +1,13 @@
+@import "base/_variables.scss";
+
+.feedback {
+    &__note {
+        font-size: 14px;
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__button-block {
+        text-align: right;
+    }
+}

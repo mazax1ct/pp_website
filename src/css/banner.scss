@@ -1,0 +1,36 @@
+@import "base/_variables.scss";
+
+.container {
+    .banner {
+        margin-left: -24px;
+        margin-right: -24px;
+        @media(min-width: $sm) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.banner {
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media(min-width: $md) {
+            margin-bottom: 70px;
+        }
+    }
+
+    &:not(:first-child) {
+        margin-top: 40px;
+        @media(min-width: $md) {
+            margin-top: 70px;
+        }
+    }
+
+    img,
+    picture {
+        display: block;
+        width: 100%;
+    }
+}

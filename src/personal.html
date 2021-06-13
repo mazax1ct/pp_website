@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Личный кабинет - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/personal.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <div class="personal">
+                <h1 class="page-title">Данные вашего профиля</h1>
+                <div class="left-menu">
+                    <ul class="left-menu__list">
+                        <li class="left-menu__item">
+                            <a class="left-menu__link is-active">Профиль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="change-email.html">Изменить e-mail</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="change-pass.html">Изменить пароль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="orders.html">История заказов</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <div class="form__group">
+                            <label class="input-label">
+                                <input class="input" type="text" value="" placeholder="Ваш email" />
+                            </label>
+                            <button class="button button--black" type="button">
+                                <span>Изменить</span>
+                                <svg class="arrow">
+                                    <use xlink:href="#arrow_next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <label class="input-label">
+                            <input class="input" type="text" name="name" value="" placeholder="Ваше имя" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="address" value="" placeholder="Адрес" />
+                        </label>
+                        <div class="form__buttons form__buttons--align_start">
+                            <button class="button" type="submit">Сохранить изменения</button>
+                        </div>
+                    </form>
+
+                    <div class="form__socials-block">
+                        <h2>Привязать соцсети</h2>
+                        <div class="form__socials">
+                            <a class="form__socials-link" href="#" title="Google+">
+                                <img src="images/icons/socials/gplus.svg" alt="Google+">
+                            </a>
+                            <a class="form__socials-link" href="#" title="Twitter">
+                                <img src="images/icons/socials/tw_disabled.svg" alt="Twitter">
+                            </a>
+                            <a class="form__socials-link" href="#" title="Facebook">
+                                <img src="images/icons/socials/fb.svg" alt="Facebook">
+                            </a>
+                            <a class="form__socials-link" href="#" title="Вконтакте">
+                                <img src="images/icons/socials/vk_disabled.svg" alt="Вконтакте">
+                            </a>
+                            <a class="form__socials-link" href="#" title="Одноклассники">
+                                <img src="images/icons/socials/ok_disabled.svg" alt="Одноклассники">
+                            </a>
+                            <a class="form__socials-link" href="#" title="Instagram">
+                                <img src="images/icons/socials/inst_disabled.svg" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

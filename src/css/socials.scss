@@ -1,0 +1,33 @@
+@import "base/_variables.scss";
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+
+    &:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        svg {
+            fill: $brand_green;
+        }
+    }
+
+    svg {
+        fill: $text_color;
+        height: 21px;
+        transition: fill 0.3s;
+        width: 21px;
+    }
+}

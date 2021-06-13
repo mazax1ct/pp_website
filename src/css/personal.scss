@@ -1,0 +1,63 @@
+@import "base/_variables.scss";
+
+.personal {
+    position: relative;
+    @media(min-width: $md) {
+        min-height: 340px;
+        padding-left: 280px;
+        padding-right: 280px;
+    }
+}
+
+.left-menu {
+    background-color: $light_grey;
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 50px;
+    overflow: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    @media(min-width: $md) {
+        left: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: absolute;
+        top: 40px;
+        width: 260px;
+        z-index: 1;
+    }
+
+    &__list {
+        display: flex;
+        white-space: nowrap;
+        @media(min-width: $md) {
+            display: block;
+            white-space: normal;
+        }
+    }
+
+    &__item {
+        padding-right: 24px;
+        @media(min-width: $md) {
+            padding-right: 0;
+        }
+    }
+
+    &__link {
+        color: $dark_grey;
+        display: inline-block;
+        font-size: 18px;
+        padding-top: 11px;
+        padding-bottom: 12px;
+        text-decoration: none;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            color: $text_color;
+        }
+    }
+}

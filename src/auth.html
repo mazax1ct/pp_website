@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Авторизация - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Войдите или создайте аккаунт</h1>
+
+            <div class="form">
+                <div class="form__socials">
+                    <a class="form__socials-link" href="#" title="Google+">
+                        <img src="images/icons/socials/gplus.svg" alt="Google+">
+                    </a>
+                    <a class="form__socials-link" href="#" title="Twitter">
+                        <img src="images/icons/socials/tw.svg" alt="Twitter">
+                    </a>
+                    <a class="form__socials-link" href="#" title="Facebook">
+                        <img src="images/icons/socials/fb.svg" alt="Facebook">
+                    </a>
+                    <a class="form__socials-link" href="#" title="Вконтакте">
+                        <img src="images/icons/socials/vk.svg" alt="Вконтакте">
+                    </a>
+                    <a class="form__socials-link" href="#" title="Одноклассники">
+                        <img src="images/icons/socials/ok.svg" alt="Одноклассники">
+                    </a>
+                    <a class="form__socials-link" href="#" title="Instagram">
+                        <img src="images/icons/socials/inst.svg" alt="Instagram">
+                    </a>
+                </div>
+                <form action="">
+                    <label class="input-label">
+                        <input class="input" type="text" name="login" value="" placeholder="Ваш e-mail" />
+                    </label>
+                    <label class="input-label">
+                        <input class="input" type="password" name="password" value="" placeholder="Пароль" />
+                    </label>
+                    <p class="form__forgot-link"><a href="pass_recovery.html">Забыли пароль?</a></p>
+                    <div class="form__buttons">
+                        <a class="button button--black" href="register.html">Зарегистрироваться</a>
+                        <button class="button" type="submit">
+                            <span>Войти</span>
+                            <svg class="arrow">
+                                <use xlink:href="#arrow_next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

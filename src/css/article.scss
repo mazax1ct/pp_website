@@ -2,6 +2,8 @@
 
 .article {
     border: 1px solid $brand_grey;
+    display: flex;
+    flex-direction: column;
     min-width: 280px;
     max-width: 350px;
     margin-left: auto;
@@ -36,6 +38,9 @@
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
         padding: 18px 22px 14px;
     }
 
@@ -71,6 +76,7 @@
         display: flex;
         font-size: 16px;
         justify-content: space-between;
+        margin-top: auto;
         padding-top: 13px;
     }
 

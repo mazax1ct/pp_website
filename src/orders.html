@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>История заказов - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/personal.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <div class="personal">
+                <h1 class="page-title">История ваших заказов</h1>
+                <div class="left-menu">
+                    <ul class="left-menu__list">
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="personal.html">Профиль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="change-email.html">Изменить e-mail</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="change-pass.html">Изменить пароль</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link is-active">История заказов</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="left-menu__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="order-list">
+                    <div class="order">
+                        <div class="order__top"></div>
+                        <p class="order__date">Заказ от 11.05.2021</p>
+                        <p class="order__price">57 900 ₽</p>
+                        <button class="order__reorder" type="button" title="Повторить"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

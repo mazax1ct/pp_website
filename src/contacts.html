@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Контакты - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/socials.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Контакты</h1>
+            <div class="contacts">
+                <div class="contacts__column contacts__column--map-block">
+                    <div class="contacts__map"></div>
+                    <p class="contacts__links">
+                        <a class="contacts__link" href="tel:+79995689097">
+                            <svg>
+                                <use xlink:href="#whatsup"></use>
+                            </svg>
+                            8 999 568 90 97
+                        </a>
+                        <a class="contacts__link" href="mailto:mail@email.com">
+                            <svg>
+                                <use xlink:href="#email"></use>
+                            </svg>
+                            mail@email.com
+                        </a>
+                    </p>
+                    <p>
+                        196006, <b>г. Санкт-Петербург</b>, ул. Цветочная, 2В<br>
+                        125040, <b>г. Москва</b>, 1-я ул. Ямского поля, дом 17, корпус 12, этаж 1, оф. № 10
+                    </p>
+                    <div class="socials">
+                        <a class="social-link" href="https://www.instagram.com/toomanygifts.ru/" target="_blank" title="Наш Instagram" rel="nofollow noreferrer noopener">
+                            <svg>
+                                <use xlink:href="#inst"></use>
+                            </svg>
+                        </a>
+                        <a class="social-link" href="https://www.facebook.com/toomanygifts" target="_blank" title="Мы в Facebook" rel="nofollow noreferrer noopener">
+                            <svg>
+                                <use xlink:href="#fb"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__column contacts__column--form-block">
+                    <p>Мы обожаем получать письма и непременно вам ответим!</p>
+                    <form class="feedback" action="" method="">
+                        <label class="input-label">
+                            <input class="input" type="text" name="name" value="" placeholder="Ваше имя" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="email" value="" placeholder="E-mail" />
+                        </label>
+                        <label class="input-label">
+                            <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
+                        </label>
+                        <label class="input-label">
+                            <textarea class="textarea textarea--big" name="message" placeholder="Ваше сообщение"></textarea>
+                        </label>
+                        <p class="feedback__note">Нажимая “Отправить” я даю согласие на обработку персональных данных<br> в соответствии с условиями <a href="terms.html" target="_blank"><b>Пользовательского Соглашения</b></a></p>
+                        <p class="feedback__button-block">
+                            <button class="button" type="submit">
+                                <span>Отправить</span>
+                                <svg class="arrow">
+                                    <use xlink:href="#arrow_next"></use>
+                                </svg>
+                            </button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

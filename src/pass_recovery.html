@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Восстановление пароля - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Восстановление пароля</h1>
+
+            <div class="form">
+                <form action="">
+                    <label class="input-label">
+                        <input class="input" type="text" name="email" value="" placeholder="Введите ваш email" />
+                    </label>
+                    <div class="form__buttons">
+                        <button class="button" type="submit">Восстановить</button>
+                        <a class="button button--black" href="auth.html">
+                            <span>Войти</span>
+                            <svg class="arrow">
+                                <use xlink:href="#arrow_next"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

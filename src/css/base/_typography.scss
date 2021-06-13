@@ -143,6 +143,19 @@ img {
     vertical-align: top;
 }
 
+.terms {
+    padding-left: 45px;
+    position: relative;
+
+    &__num {
+        font-weight: 400;
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}
+
 .succsess {
     color: $brand_green;
 }

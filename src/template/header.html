@@ -1,37 +1,61 @@
 <header class="header">
-  <div class="header__top header__container">
-    <!--на главной не ссылка-->
-    <a class="header__logo" href="main.html"><img width="244" height="26" src="images/logo.svg" alt="Подарки просто"></a>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li class="header__menu-item header__menu-item--only_mobile"><a class="header__menu-link" href="catalog.html">Каталог</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="delivery_payment.html">Доставка и оплата</a></li>
-        <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Блог</a></li>
-      </ul>
-    </nav>
-    <div class="header__search">
-      <form class="header__search-form" action="search-results.html">
-        <input class="header__search-input" name="q" type="text" placeholder="Поиск по каталогу" autocomplete="off">
-        <button class="header__search-submit" type="submit" title="Искать"><svg><use xlink:href="#search"></use></svg></button>
-      </form>
+    <div class="header__top header__container">
+        <!--на главной не ссылка-->
+        <a class="header__logo" href="main.html"><img width="244" height="26" src="images/logo.svg" alt="Подарки просто"></a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item header__menu-item--only_mobile"><a class="header__menu-link" href="catalog.html">Каталог</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="contacts.html">Контакты</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="delivery_payment.html">Доставка и оплата</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Блог</a></li>
+            </ul>
+        </nav>
+        <div class="header__search">
+            <form class="header__search-form" action="search-results.html">
+                <input class="header__search-input" name="q" type="text" placeholder="Поиск по каталогу" autocomplete="off">
+                <button class="header__search-submit" type="submit" title="Искать">
+                    <svg>
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <div class="header__buttons">
+            <button class="js-search-toggler header__button header__search-toggler" type="button" title="Поиск">
+                <svg>
+                    <use xlink:href="#search"></use>
+                </svg>
+            </button>
+            <a class="header__button" href="cart.html" title="Корзина">
+                <span class="header__button-container header__button-container--full">
+                    <svg>
+                        <use xlink:href="#cart"></use>
+                    </svg>
+                </span>
+            </a>
+            <a class="header__button" href="favorites.html" title="Избранное">
+                <span class="header__button-container">
+                    <svg>
+                        <use xlink:href="#favorites"></use>
+                    </svg>
+                </span>
+            </a>
+            <a class="header__button" href="personal.html" title="Личный кабинет">
+                <svg>
+                    <use xlink:href="#personal"></use>
+                </svg>
+            </a>
+            <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню"><span></span></button>
+        </div>
     </div>
-    <div class="header__buttons">
-      <button class="js-search-toggler header__button header__search-toggler" type="button" title="Поиск"><svg><use xlink:href="#search"></use></svg></button>
-      <a class="header__button" href="cart.html" title="Корзина"><span class="header__button-container header__button-container--full"><svg><use xlink:href="#cart"></use></svg></span></a>
-      <a class="header__button" href="favorites.html" title="Избранное"><span class="header__button-container"><svg><use xlink:href="#favorites"></use></svg></span></a>
-      <a class="header__button" href="perosnal.html" title="Личный кабинет"><svg><use xlink:href="#personal"></use></svg></a>
-      <button class="js-menu-toggler header__menu-toggler" type="button" title="Меню"><span></span></button>
+    <div class="header__bottom header__container">
+        <ul class="header__catalog">
+            <li class="header__catalog-item"><a class="header__catalog-link is-active" href="catalog.html">Каталог</a></li>
+            <li class="header__catalog-item"><a class="header__catalog-link" href="individual.html">Тематические</a></li>
+            <li class="header__catalog-item"><a class="header__catalog-link" href="individual.html">Индивидуальные</a></li>
+            <li class="header__catalog-item"><a class="header__catalog-link" href="individual.html">Событийные</a></li>
+            <li class="header__catalog-item"><a class="header__catalog-link" href="individual.html">По составу</a></li>
+        </ul>
     </div>
-  </div>
-  <div class="header__bottom header__container">
-    <ul class="header__catalog">
-      <li class="header__catalog-item"><a class="header__catalog-link is-active" href="#">Каталог</a></li>
-      <li class="header__catalog-item"><a class="header__catalog-link" href="#">Тематические</a></li>
-      <li class="header__catalog-item"><a class="header__catalog-link" href="#">Индивидуальные</a></li>
-      <li class="header__catalog-item"><a class="header__catalog-link" href="#">Событийные</a></li>
-      <li class="header__catalog-item"><a class="header__catalog-link" href="#">По составу</a></li>
-    </ul>
-  </div>
 </header>
