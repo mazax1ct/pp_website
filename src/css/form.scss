@@ -9,32 +9,7 @@
     }
 
     &__socials {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 37px;
-    }
-
-    &__socials-link {
-        align-items: center;
-        background-color: $light_grey;
-        border-radius: 50%;
-        color: $text_color;
-        display: flex;
-        height: 40px;
-        justify-content: center;
-        transition: background-color 0.3s;
-        text-decoration: none;
-        width: 40px;
-        @media(min-width: 375px) {
-            height: 46px;
-            width: 46px;
-        }
-
-        &:focus,
-        &:hover {
-            background-color: darken($light_grey, 3%);
-        }
     }
 
     &__forgot-link {

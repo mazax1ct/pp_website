@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Оформление заказа - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/social-auth.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="cart.html">Корзина</a></li>
+            <li class="breadcrumbs__item">Оформление заказа</li>
+        </ul>
+
+        <div class="container">
+            <h1 class="page-title">Оформление заказа</h1>
+
+            <div class="checkout">
+                <div class="checkout__column">
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Введите ваши данные или войдите в аккаунт</p>
+                        <div class="checkout__user-data">
+                            <label class="input-label">
+                                <input class="input" type="text" name="name" value="" placeholder="Ваше имя" />
+                            </label>
+                            <label class="input-label">
+                                <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
+                            </label>
+                            <label class="input-label">
+                                <input class="input" type="text" name="email" value="" placeholder="Email" />
+                            </label>
+                        </div>
+                        <div class="checkout__auth-block">
+                            <div class="checkout__social-auth">
+                                <div class="social-auth">
+                                    <a class="social-auth__link" href="#" title="Google+">
+                                        <img src="images/icons/socials/gplus.svg" alt="Google+">
+                                    </a>
+                                    <a class="social-auth__link" href="#" title="Twitter">
+                                        <img src="images/icons/socials/tw.svg" alt="Twitter">
+                                    </a>
+                                    <a class="social-auth__link" href="#" title="Facebook">
+                                        <img src="images/icons/socials/fb.svg" alt="Facebook">
+                                    </a>
+                                    <a class="social-auth__link" href="#" title="Вконтакте">
+                                        <img src="images/icons/socials/vk.svg" alt="Вконтакте">
+                                    </a>
+                                    <a class="social-auth__link" href="#" title="Одноклассники">
+                                        <img src="images/icons/socials/ok.svg" alt="Одноклассники">
+                                    </a>
+                                    <a class="social-auth__link" href="#" title="Instagram">
+                                        <img src="images/icons/socials/inst.svg" alt="Instagram">
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="button button--inverted button--animate" type="submit" data-text="Войти в аккаунт →">
+                                <span>Войти в аккаунт →</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Комментарий к заказу</p>
+                        <label class="input-label">
+                            <textarea class="textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="checkout__column">
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Выберите способ доставки</p>
+                        <div class="checkout__delivery-radios">
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="1" checked />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Самовывоз</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="2" />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Достава в пункт выдачи</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="3" />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Курьерская доствака</span>
+                            </label>
+                        </div>
+
+                        <label class="input-label">
+                            <input class="input" type="text" name="address" value="" placeholder="Регион, населенный пункт, улица, дом, кв/офис" />
+                        </label>
+                    </div>
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Выберите способ оплаты</p>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="1" checked />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Наличными при получении</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="2" />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Банковской картой онлайн</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="3" />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Безналичный расчет по банковским реквизитам</span>
+                        </label>
+                    </div>
+                    <div class="checkout__button-block">
+                        <button class="button button--big button--animate" type="submit" data-text="Оформить заказ →">
+                            <span>Оформить заказ →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+
+</body>
+
+</html>

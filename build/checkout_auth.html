@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Главная - подарки просто</title>
+    <title>Оформление заказа - подарки просто</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <!--стили подключаемых на страние блоков-->
-    <link rel="stylesheet" href="css/page-banner.css" />
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/page-title.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
 </head>
 
 <body>
@@ -192,8 +194,93 @@
     </header>
 
     <main class="page-content">
-        <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="cart.html">Корзина</a></li>
+            <li class="breadcrumbs__item">Оформление заказа</li>
+        </ul>
 
+        <div class="container">
+            <h1 class="page-title">Оформление заказа</h1>
+
+            <div class="checkout">
+                <div class="checkout__column">
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Введите ваши данные или войдите в аккаунт</p>
+                        <div class="checkout__user-data">
+                            <label class="input-label">
+                                <input class="input" type="text" name="name" value="" placeholder="Ваше имя" />
+                            </label>
+                            <label class="input-label">
+                                <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
+                            </label>
+                            <label class="input-label">
+                                <input class="input" type="text" name="email" value="" placeholder="Email" />
+                            </label>
+                        </div>
+                        <div class="checkout__logout-block">
+                            <span class="checkout__logout-title">Не ваш аккаунт?</span>
+                            <a class="checkout__logout" href="#">
+                                <span>Выйти →</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Комментарий к заказу</p>
+                        <label class="input-label">
+                            <textarea class="textarea" placeholder="Введите сообщение"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="checkout__column">
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Выберите способ доставки</p>
+                        <div class="checkout__delivery-radios">
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="1" checked />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Самовывоз</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="2" />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Достава в пункт выдачи</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery" value="3" />
+                                <span class="radio-icon"></span>
+                                <span class="radio-text">Курьерская доствака</span>
+                            </label>
+                        </div>
+
+                        <label class="input-label">
+                            <input class="input" type="text" name="address" value="" placeholder="Регион, населенный пункт, улица, дом, кв/офис" />
+                        </label>
+                    </div>
+                    <div class="checkout__section">
+                        <p class="checkout__section-title">Выберите способ оплаты</p>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="1" checked />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Наличными при получении</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="2" />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Банковской картой онлайн</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="payment" value="3" />
+                            <span class="radio-icon"></span>
+                            <span class="radio-text">Безналичный расчет по банковским реквизитам</span>
+                        </label>
+                    </div>
+                    <div class="checkout__button-block">
+                        <button class="button button--big button--animate" type="submit" data-text="Оформить заказ →">
+                            <span>Оформить заказ →</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -254,9 +341,6 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/preloader.js"></script>
-
-    <!--скрипты подключаемых на странице блоков-->
-    <script src="js/page-banner-slider.js"></script>
 
 </body>
 

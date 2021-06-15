@@ -63,8 +63,10 @@
     }
 
     &__form {
-        display: flex;
         margin-bottom: 45px;
+        @media(min-width: $sm) {
+            display: flex;
+        }
 
         .button {
             width: 100%;

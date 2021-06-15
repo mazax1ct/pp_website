@@ -30,6 +30,7 @@
     <!--стили подключаемых на страние блоков-->
     <link rel="stylesheet" href="css/page-title.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/social-auth.css" />
 </head>
 
 <body>
@@ -198,24 +199,26 @@
 
             <div class="form">
                 <div class="form__socials">
-                    <a class="form__socials-link" href="#" title="Google+">
-                        <img src="images/icons/socials/gplus.svg" alt="Google+">
-                    </a>
-                    <a class="form__socials-link" href="#" title="Twitter">
-                        <img src="images/icons/socials/tw.svg" alt="Twitter">
-                    </a>
-                    <a class="form__socials-link" href="#" title="Facebook">
-                        <img src="images/icons/socials/fb.svg" alt="Facebook">
-                    </a>
-                    <a class="form__socials-link" href="#" title="Вконтакте">
-                        <img src="images/icons/socials/vk.svg" alt="Вконтакте">
-                    </a>
-                    <a class="form__socials-link" href="#" title="Одноклассники">
-                        <img src="images/icons/socials/ok.svg" alt="Одноклассники">
-                    </a>
-                    <a class="form__socials-link" href="#" title="Instagram">
-                        <img src="images/icons/socials/inst.svg" alt="Instagram">
-                    </a>
+                    <div class="social-auth">
+                        <a class="social-auth__link" href="#" title="Google+">
+                            <img src="images/icons/socials/gplus.svg" alt="Google+">
+                        </a>
+                        <a class="social-auth__link" href="#" title="Twitter">
+                            <img src="images/icons/socials/tw.svg" alt="Twitter">
+                        </a>
+                        <a class="social-auth__link" href="#" title="Facebook">
+                            <img src="images/icons/socials/fb.svg" alt="Facebook">
+                        </a>
+                        <a class="social-auth__link" href="#" title="Вконтакте">
+                            <img src="images/icons/socials/vk.svg" alt="Вконтакте">
+                        </a>
+                        <a class="social-auth__link" href="#" title="Одноклассники">
+                            <img src="images/icons/socials/ok.svg" alt="Одноклассники">
+                        </a>
+                        <a class="social-auth__link" href="#" title="Instagram">
+                            <img src="images/icons/socials/inst.svg" alt="Instagram">
+                        </a>
+                    </div>
                 </div>
                 <form action="">
                     <label class="input-label">
@@ -227,11 +230,8 @@
                     <p class="form__forgot-link"><a href="pass_recovery.html">Забыли пароль?</a></p>
                     <div class="form__buttons">
                         <a class="button button--black" href="register.html">Зарегистрироваться</a>
-                        <button class="button" type="submit">
-                            <span>Войти</span>
-                            <svg class="arrow">
-                                <use xlink:href="#arrow_next"></use>
-                            </svg>
+                        <button class="button button--animate" type="submit" data-text="Войти →">
+                            <span>Войти →</span>
                         </button>
                     </div>
                 </form>
@@ -245,11 +245,8 @@
                 <div class="footer__logo"><img width="301" height="32" src="images/logo.svg" alt="Подарки просто"></div>
                 <div class="footer__form">
                     <input class="input" type="text" placeholder="Ваш e-mail">
-                    <button class="button" type="submit">
-                        <span>Оставить&nbsp;заявку</span>
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_next"></use>
-                        </svg>
+                    <button class="button button--animate" type="submit" data-text="Оставить&nbsp;заявку&nbsp;→">
+                        <span>Оставить&nbsp;заявку&nbsp;→</span>
                     </button>
                 </div>
                 <p class="footer__contacts">

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/page-title.css" />
     <link rel="stylesheet" href="css/personal.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/social-auth.css" />
 </head>
 
 <body>
@@ -223,11 +224,8 @@
                             <label class="input-label">
                                 <input class="input" type="text" value="" placeholder="Ваш email" />
                             </label>
-                            <button class="button button--black" type="button">
-                                <span>Изменить</span>
-                                <svg class="arrow">
-                                    <use xlink:href="#arrow_next"></use>
-                                </svg>
+                            <button class="button button--black button--animate" type="button" data-text="Изменить →">
+                                <span>Изменить →</span>
                             </button>
                         </div>
                         <label class="input-label">
@@ -246,24 +244,24 @@
 
                     <div class="form__socials-block">
                         <h2>Привязать соцсети</h2>
-                        <div class="form__socials">
-                            <a class="form__socials-link" href="#" title="Google+">
+                        <div class="social-auth">
+                            <a class="social-auth__link" href="#" title="Google+">
                                 <img src="images/icons/socials/gplus.svg" alt="Google+">
                             </a>
-                            <a class="form__socials-link" href="#" title="Twitter">
-                                <img src="images/icons/socials/tw_disabled.svg" alt="Twitter">
+                            <a class="social-auth__link" href="#" title="Twitter">
+                                <img src="images/icons/socials/tw.svg" alt="Twitter">
                             </a>
-                            <a class="form__socials-link" href="#" title="Facebook">
+                            <a class="social-auth__link" href="#" title="Facebook">
                                 <img src="images/icons/socials/fb.svg" alt="Facebook">
                             </a>
-                            <a class="form__socials-link" href="#" title="Вконтакте">
-                                <img src="images/icons/socials/vk_disabled.svg" alt="Вконтакте">
+                            <a class="social-auth__link" href="#" title="Вконтакте">
+                                <img src="images/icons/socials/vk.svg" alt="Вконтакте">
                             </a>
-                            <a class="form__socials-link" href="#" title="Одноклассники">
-                                <img src="images/icons/socials/ok_disabled.svg" alt="Одноклассники">
+                            <a class="social-auth__link" href="#" title="Одноклассники">
+                                <img src="images/icons/socials/ok.svg" alt="Одноклассники">
                             </a>
-                            <a class="form__socials-link" href="#" title="Instagram">
-                                <img src="images/icons/socials/inst_disabled.svg" alt="Instagram">
+                            <a class="social-auth__link" href="#" title="Instagram">
+                                <img src="images/icons/socials/inst.svg" alt="Instagram">
                             </a>
                         </div>
                     </div>
@@ -278,11 +276,8 @@
                 <div class="footer__logo"><img width="301" height="32" src="images/logo.svg" alt="Подарки просто"></div>
                 <div class="footer__form">
                     <input class="input" type="text" placeholder="Ваш e-mail">
-                    <button class="button" type="submit">
-                        <span>Оставить&nbsp;заявку</span>
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_next"></use>
-                        </svg>
+                    <button class="button button--animate" type="submit" data-text="Оставить&nbsp;заявку&nbsp;→">
+                        <span>Оставить&nbsp;заявку&nbsp;→</span>
                     </button>
                 </div>
                 <p class="footer__contacts">
