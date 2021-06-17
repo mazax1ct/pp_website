@@ -1,0 +1,57 @@
+@import "base/_variables.scss";
+
+.article-banner {
+    background-color: $brand_grey;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 57px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__inner {
+        background-color: rgba($light_grey, 0.7);
+        backdrop-filter: blur(5px);
+        filter: drop-shadow(0 0 30px rgba(#000, 0.08));
+        max-width: 460px;
+        padding: 30px;
+        @media(min-width: $xl) {
+            padding: 30px 56px 40px;
+            max-width: 584px;
+        }
+    }
+
+    &__title {
+        border-bottom: 1px solid rgba(#000, 0.3);
+        font-size: 24px;
+        margin-bottom: 26px;
+        padding-bottom: 20px;
+        text-align: center;
+        @media(min-width: $md) {
+            font-size: 30px;
+        }
+        @media(min-width: $xl) {
+            font-size: 50px;
+        }
+    }
+
+    &__main {
+        border-bottom: 1px solid rgba(#000, 0.3);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        @media(min-width: $xl) {
+            font-size: 24px;
+            margin-bottom: 26px;
+        }
+    }
+
+    &__preview-text {
+        @media(min-width: $xxl) {
+            font-size: 16px;
+            margin-bottom: 26px;
+        }
+    }
+}

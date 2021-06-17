@@ -1,0 +1,35 @@
+@import "base/_variables.scss";
+
+.banner-slider {
+    margin-bottom: 34px;
+
+    .page-banner {
+        margin-bottom: 0;
+    }
+
+    .swiper-pagination {
+        bottom: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: rgba(#fff, 0.4);
+        opacity: 1;
+        margin-left: 13px;
+        margin-right: 13px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.swiper-pagination-bullet-active {
+            background-color: #fff;
+        }
+    }
+}

@@ -9,6 +9,19 @@
     margin-right: auto;
     overflow: hidden;
     position: relative;
+    width: 100%;
+
+    &--small {
+        max-width: 180px;
+
+        .case-card__title {
+            font-size: 12px;
+        }
+
+        .case-card__text-block {
+            padding: 13px 10px 7px;
+        }
+    }
 
     &:hover {
         .case-card__image {
@@ -19,6 +32,7 @@
     &__link {
         display: block;
         text-decoration: none;
+        width: 100%;
 
         &:focus,
         &:hover {
