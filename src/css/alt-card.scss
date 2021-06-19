@@ -1,0 +1,33 @@
+@import "base/_variables.scss";
+
+.alt-card {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__image {
+        min-width: 90px;
+        width: 90px;
+        @media(min-width: $md) {
+            min-width: 130px;
+            width: 130px;
+        }
+    }
+
+    &__info {
+        padding-left: 12px;
+        @media(min-width: $md) {
+            padding-left: 24px;
+        }
+
+        p {
+            &:not(:last-child) {
+                @media(min-width: $xxl) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

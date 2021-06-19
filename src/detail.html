@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Карточка каталога детально - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/quantity.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/alt-card.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/card.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Тематические</a></li>
+            <li class="breadcrumbs__item">Bespoke cold-pressed waistcoat</li>
+        </ul>
+
+        <div class="container">
+            <div class="side-indents">
+                <div class="detail">
+                    <div class="detail__images">
+                        <div class="js-detail-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="detail__info">
+                        <div class="detail__title-block">
+                            <h1 class="detail__title">
+                                <button class="detail__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                Bespoke cold-pressed waistcoat
+                            </h1>
+                            <p class="detail__articul">2786-87</p>
+                        </div>
+                        <div class="detail__price-block">
+                            <p class="detail__price detail__price--discount">3 780 ₽</p>
+                            <p class="detail__old-price">5 000 ₽</p>
+                            <p class="detail__discount">30%</p>
+                        </div>
+                        <div class="detail__buy-block">
+                            <div class="quantity">
+                                <button class="quantity__button" type="button" title="Уменьшить">
+                                    <svg>
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="quantity__input" type="text" value="1" readonly>
+                                <button class="quantity__button" type="button" title="Увеличить">
+                                    <svg>
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <a class="button button--big button--add_cart" href="javascript:void(0)">
+                                <svg class="cart">
+                                    <use xlink:href="#add_cart"></use>
+                                </svg>
+                                Добавить в корзину
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <ul class="tabs-nav">
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link is-active" href="#" data-href="1">Состав набора</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="2">Описание</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="3">Дополнительно</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-list">
+                                <div class="tab is-active" data-target="1">
+                                    <p>
+                                        Vexillologist polaroid next level mustache!<br>
+                                        Roof party salvia cliche waistcoat green juice crucifix flannel<br>
+                                        leggings pinterest hell of franzen blog. Pour-over paleo tbh mustache plaid. 90's taiyaki irony whatever gluten-free succulents pok pok cliche. Typewriter poke fam helvetica af live-edge.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quod dicta, dolore esse, animi repellat soluta. Quod vero architecto suscipit, odio unde optio numquam, natus quia officiis quo, quidem dicta.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="3">
+                                    <div class="alt-card">
+                                        <div class="alt-card__image"><img src="images/content/detail/img_2.jpg" srcset="images/content/detail/img_2@2x.jpg 2x" alt="alt"></div>
+                                        <div class="alt-card__info">
+                                            <p>Roof party salvia cliche waistcoat green juice crucifix flannel leggings pinterest hell of franzen blog.</p>
+                                            <p>Размеры: 30х40х70 см</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Вас может заинтересовать</h2>
+                <div class="js-cards-slider slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">30 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_1.jpg" srcset="images/content/cards/img_1@2x.jpg 2x" alt="Celiac messenger bag occupy">
+                                        </span>
+                                        <span class="card__title-text">Celiac messenger</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price card__price--discount">3 780 ₽</span>
+                                        <span class="card__old-price">5 000 ₽ </span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить"><svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--add_cart is-pressed" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить">
+                                            <svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--added_cart" href="cart.html" title="Товар в корзине">
+                                        <svg class="cart">
+                                            <use xlink:href="#added_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price">7 900 ₽</span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="slider__prev" type="button" title="Назад">
+                        <svg class="arrow">
+                            <use xlink:href="#arrow_prev"></use>
+                        </svg>
+                    </button>
+                    <button class="slider__next" type="button" title="Вперёд">
+                        <svg class="arrow">
+                            <use xlink:href="#arrow_next"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        const detailSlider = new Swiper('.js-detail-slider', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+
+        const cardsSlider = new Swiper('.js-cards-slider', {
+            loop: true,
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                },
+                1023: {
+                    slidesPerView: 3
+                },
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
+            navigation: {
+                nextEl: '.slider__next',
+                prevEl: '.slider__prev',
+            }
+        });
+    </script>
+    <script src="js/tabs.js"></script>
+
+</body>
+
+</html>

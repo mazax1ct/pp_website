@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Главная - подарки просто</title>
+    <title>Карточка каталога детально - подарки просто</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -29,17 +29,13 @@
 
     <!--стили подключаемых на страние блоков-->
     <link rel="stylesheet" href="plugins_css/swiper-bundle.css" />
-    <link rel="stylesheet" href="css/banner-slider.css" />
-    <link rel="stylesheet" href="css/page-banner.css" />
-    <link rel="stylesheet" href="css/stories-circles-slider.css" />
-    <link rel="stylesheet" href="css/stories-circles.css" />
-    <link rel="stylesheet" href="css/stories-modal.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/case-card.css" />
-    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/detail.css" />
     <link rel="stylesheet" href="css/quantity.css" />
-    <link rel="stylesheet" href="css/article-banner.css" />
-    <link rel="stylesheet" href="css/clients.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/alt-card.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/card.css" />
 </head>
 
 <body>
@@ -211,251 +207,108 @@
     </header>
 
     <main class="page-content">
-        <div class="js-banner-slider swiper-container banner-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <section class="page-banner" style="background-image: url('images/content/page-banner/img_1.jpg')">
-                        <div class="page-banner__container">
-                            <h1 class="page-banner__title">Летняя коллекция идей</h1>
-                            <p class="page-banner__text">Roof party salvia cliche waistcoat green juice crucifix flannel<br> leggings pinterest hell of franzen blog</p>
-                            <a class="button button--animate" href="#" data-text="Подробнее →"><span>Подробнее →</span></a>
-                        </div>
-                    </section>
-                </div>
-                <div class="swiper-slide">
-                    <section class="page-banner" style="background-image: url('images/content/page-banner/img_1.jpg')">
-                        <div class="page-banner__container">
-                            <p class="page-banner__title">Летняя коллекция идей</p>
-                            <p class="page-banner__text">Roof party salvia cliche waistcoat green juice crucifix flannel<br> leggings pinterest hell of franzen blog</p>
-                            <a class="button button--animate" href="#" data-text="Подробнее →"><span>Подробнее →</span></a>
-                        </div>
-                    </section>
-                </div>
-                <div class="swiper-slide">
-                    <section class="page-banner" style="background-image: url('images/content/page-banner/img_1.jpg')">
-                        <div class="page-banner__container">
-                            <p class="page-banner__title">Летняя коллекция идей</p>
-                            <p class="page-banner__text">Roof party salvia cliche waistcoat green juice crucifix flannel<br> leggings pinterest hell of franzen blog</p>
-                            <a class="button button--animate" href="#" data-text="Подробнее →"><span>Подробнее →</span></a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Тематические</a></li>
+            <li class="breadcrumbs__item">Bespoke cold-pressed waistcoat</li>
+        </ul>
 
         <div class="container">
             <div class="side-indents">
-                <div class="js-stories-circles-slider stories-circles-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Beauty</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Эко наборы</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">% SALE %</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Идеи</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">VIP</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Брутальненько</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">NEW</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Конкурс</div>
-                            </button>
-                        </div>
-                        <div class="swiper-slide">
-                            <button class="stories-circle" type="button">
-                                <div class="stories-circle__image-wrapper">
-                                    <img src="images/content/main-page/circle.jpg" srcset="images/content/main-page/circle.jpg" alt="alt">
-                                </div>
-                                <div class="stories-circle__title">Бренды</div>
-                            </button>
-                        </div>
-                    </div>
-
-                    <button class="stories-circles-slider__prev" type="button" title="Назад">
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_prev"></use>
-                        </svg>
-                    </button>
-                    <button class="stories-circles-slider__next" type="button" title="Вперёд">
-                        <svg class="arrow">
-                            <use xlink:href="#arrow_next"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="stories-modal">
-                    <div class="stories-modal__overlay"></div>
-                    <div class="stories-modal__top">
-                        <button class="stories-modal__mute" type="button" title="Включить звук">
-                            <svg>
-                                <use xlink:href="#mute"></use>
-                            </svg>
-                            <span>Без звука</span>
-                        </button>
-                        <button class="js-stories-close stories-modal__close" type="button" title="Закрыть">
-                            <svg>
-                                <use xlink:href="#crest"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="stories-modal__list">
-                        <div class="js-stories-videos-slider swiper-container stories-modal__slider">
+                <div class="detail">
+                    <div class="detail__images">
+                        <div class="js-detail-slider swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="stories-modal__video"><video src="https://goldapple.ru/media/stories/1/7/1743f5b94d0e4794868bea15cf3d25cf.mp4" preload="metadata" playsinline="" muted=""></video></div>
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="stories-modal__video"><video src="https://goldapple.ru/media/stories/e/c/ecookinh_hit.mp4" preload="metadata" playsinline="" muted=""></video></div>
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="stories-modal__video"><video src="https://goldapple.ru/media/stories/k/y/kylie_mask.mp4" preload="metadata" playsinline="" muted=""></video></div>
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="stories-modal__bottom">
-                        <button class="js-products-opener stories-modal__products-opener" type="button" title="Открыть набор">
-                            <svg>
-                                <use xlink:href="#chevron_down"></use>
-                            </svg>
-                            Состав набора
-                        </button>
-                    </div>
-                    <div class="stories-modal__products">
-                        <div class="stories-modal__products-inner">
-                            <div class="js-products-slider slider swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <article class="case-card case-card--small" tabindex="0">
-                                            <h2 class="case-card__title">
-                                                <a class="case-card__link" href="detail.html">
-                                                    <span class="case-card__image-block">
-                                                        <img class="case-card__image" src="images/content/main-page/card.jpg" srcset="images/content/main-page/card@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                                    </span>
-                                                    <span class="case-card__text-block">
-                                                        <span class="case-card__title-text">90's pok</span>
-                                                    </span>
-                                                </a>
-                                            </h2>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <article class="case-card case-card--small" tabindex="0">
-                                            <h2 class="case-card__title">
-                                                <a class="case-card__link" href="detail.html">
-                                                    <span class="case-card__image-block">
-                                                        <img class="case-card__image" src="images/content/main-page/card.jpg" srcset="images/content/main-page/card@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                                    </span>
-                                                    <span class="case-card__text-block">
-                                                        <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                                    </span>
-                                                </a>
-                                            </h2>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <article class="case-card case-card--small" tabindex="0">
-                                            <h2 class="case-card__title">
-                                                <a class="case-card__link" href="detail.html">
-                                                    <span class="case-card__image-block">
-                                                        <img class="case-card__image" src="images/content/main-page/card.jpg" srcset="images/content/main-page/card@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                                    </span>
-                                                    <span class="case-card__text-block">
-                                                        <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                                    </span>
-                                                </a>
-                                            </h2>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <article class="case-card case-card--small" tabindex="0">
-                                            <h2 class="case-card__title">
-                                                <a class="case-card__link" href="detail.html">
-                                                    <span class="case-card__image-block">
-                                                        <img class="case-card__image" src="images/content/main-page/card.jpg" srcset="images/content/main-page/card@2x.jpg 2x" alt="90's pok pok bicycle rights">
-                                                    </span>
-                                                    <span class="case-card__text-block">
-                                                        <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                                    </span>
-                                                </a>
-                                            </h2>
-                                        </article>
-                                    </div>
-                                </div>
-                                <button class="slider__prev" type="button" title="Назад">
-                                    <svg class="arrow">
-                                        <use xlink:href="#arrow_prev"></use>
+                    <div class="detail__info">
+                        <div class="detail__title-block">
+                            <h1 class="detail__title">
+                                <button class="detail__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
                                     </svg>
                                 </button>
-                                <button class="slider__next" type="button" title="Вперёд">
-                                    <svg class="arrow">
-                                        <use xlink:href="#arrow_next"></use>
+                                Bespoke cold-pressed waistcoat
+                            </h1>
+                            <p class="detail__articul">2786-87</p>
+                        </div>
+                        <div class="detail__price-block">
+                            <p class="detail__price detail__price--discount">3 780 ₽</p>
+                            <p class="detail__old-price">5 000 ₽</p>
+                            <p class="detail__discount">30%</p>
+                        </div>
+                        <div class="detail__buy-block">
+                            <div class="quantity">
+                                <button class="quantity__button" type="button" title="Уменьшить">
+                                    <svg>
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="quantity__input" type="text" value="1" readonly>
+                                <button class="quantity__button" type="button" title="Увеличить">
+                                    <svg>
+                                        <use xlink:href="#plus"></use>
                                     </svg>
                                 </button>
                             </div>
-
-                            <button class="js-products-closer stories-modal__products-closer" type="button" title="Закрыть набор">
-                                <svg>
-                                    <use xlink:href="#chevron_down"></use>
+                            <a class="button button--big button--add_cart" href="javascript:void(0)">
+                                <svg class="cart">
+                                    <use xlink:href="#add_cart"></use>
                                 </svg>
-                                Скрыть состав набора
-                            </button>
+                                Добавить в корзину
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <ul class="tabs-nav">
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link is-active" href="#" data-href="1">Состав набора</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="2">Описание</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="3">Дополнительно</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-list">
+                                <div class="tab is-active" data-target="1">
+                                    <p>
+                                        Vexillologist polaroid next level mustache!<br>
+                                        Roof party salvia cliche waistcoat green juice crucifix flannel<br>
+                                        leggings pinterest hell of franzen blog. Pour-over paleo tbh mustache plaid. 90's taiyaki irony whatever gluten-free succulents pok pok cliche. Typewriter poke fam helvetica af live-edge.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quod dicta, dolore esse, animi repellat soluta. Quod vero architecto suscipit, odio unde optio numquam, natus quia officiis quo, quidem dicta.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="3">
+                                    <div class="alt-card">
+                                        <div class="alt-card__image"><img src="images/content/detail/img_2.jpg" srcset="images/content/detail/img_2@2x.jpg 2x" alt="alt"></div>
+                                        <div class="alt-card__info">
+                                            <p>Roof party salvia cliche waistcoat green juice crucifix flannel leggings pinterest hell of franzen blog.</p>
+                                            <p>Размеры: 30х40х70 см</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <h2>Актуальные предложения</h2>
+                <h2>Вас может заинтересовать</h2>
                 <div class="js-cards-slider slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -604,81 +457,6 @@
                 </div>
             </div>
         </div>
-
-        <article class="article-banner" style="background-image: url('images/content/main-page/article.jpg')">
-            <div class="container">
-                <div class="side-indents">
-                    <div class="article-banner__inner">
-                        <h2 class="article-banner__title">А знаете ли вы?</h2>
-                        <p class="article-banner__main">Iceland man braid four dollar toast drinking vinegar kinfolk 8-bit</p>
-                        <p class="article-banner__preview-text">
-                            Roof party salvia cliche waistcoat green juice crucifix flannel leggings pinterest hell of franzen blog. Pour-over paleo tbh mustache plaid. 90's taiyaki irony whatever gluten-free succulents pok pok cliche.Typewriter poke
-                            fam
-                            helvetica af live-edge..
-                        </p>
-                        <p><a class="button button--animate" href="#" data-text="Читать статью →"><span>Читать статью →</span></a></p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <div class="container">
-            <div class="side-indents">
-                <h2>Наши клиенты</h2>
-            </div>
-            <div class="clients">
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_1.png" srcset="images/content/clients/img_1@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_2.png" srcset="images/content/clients/img_2@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_3.png" srcset="images/content/clients/img_3@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_4.png" srcset="images/content/clients/img_4@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_5.png" srcset="images/content/clients/img_5@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_6.png" srcset="images/content/clients/img_6@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_7.png" srcset="images/content/clients/img_7@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_8.png" srcset="images/content/clients/img_8@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_9.png" srcset="images/content/clients/img_9@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-                <div class="clients__item">
-                    <a href="#" target="_blank" rel="nofollow noreferrer noopener">
-                        <img src="images/content/clients/img_10.png" srcset="images/content/clients/img_10@2x.png 2x" alt="alt">
-                    </a>
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
@@ -738,71 +516,12 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/preloader.js"></script>
-
-    <!--скрипты подключаемых на странице блоков-->
     <script src="js/swiper-bundle.min.js"></script>
     <script>
-        const bannerSlider = new Swiper('.js-banner-slider', {
+        const detailSlider = new Swiper('.js-detail-slider', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination'
-            }
-        });
-
-        const circlesSlider = new Swiper('.js-stories-circles-slider', {
-            loop: true,
-            slidesPerView: 3,
-            navigation: {
-                nextEl: '.stories-circles-slider__next',
-                prevEl: '.stories-circles-slider__prev',
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 6
-                },
-                1023: {
-                    slidesPerView: 8
-                },
-                1199: {
-                    slidesPerView: 10,
-                    spaceBetween: 40
-                }
-            },
-        });
-
-        const videoSlider = new Swiper('.js-stories-videos-slider', {
-            loop: true,
-            slidesPerView: 1,
-            centeredSlides: true,
-            breakpoints: {
-                767: {
-                    slidesPerView: 3
-                }
-            }
-        });
-
-        videoSlider.on('slideChangeTransitionEnd', function() {
-            var video = $('.js-stories-videos-slider').find('.swiper-slide-active').find('video');
-            video[0].play();
-        });
-
-        const productsSlider = new Swiper('.js-products-slider', {
-            loop: true,
-            breakpoints: {
-                767: {
-                    slidesPerView: 3
-                },
-                1023: {
-                    slidesPerView: 4
-                },
-                1199: {
-                    slidesPerView: 5,
-                    spaceBetween: 44
-                }
-            },
-            navigation: {
-                nextEl: '.slider__next',
-                prevEl: '.slider__prev',
             }
         });
 
@@ -826,7 +545,8 @@
             }
         });
     </script>
-    <script src="js/stories.js"></script>
+    <script src="js/tabs.js"></script>
+
 </body>
 
 </html>

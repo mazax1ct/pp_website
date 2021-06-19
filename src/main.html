@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/stories-modal.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/case-card.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/quantity.css" />
     <link rel="stylesheet" href="css/article-banner.css" />
     <link rel="stylesheet" href="css/clients.css" />
 </head>
@@ -191,7 +193,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="stories-modal__bottom">
                         <button class="js-products-opener stories-modal__products-opener" type="button" title="Открыть набор">
@@ -288,63 +289,135 @@
                 <div class="js-cards-slider slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_3.jpg" srcset="images/content/cards/img_3@2x.jpg 2x" alt="90's pok pok bicycle rights">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">30 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_1.jpg" srcset="images/content/cards/img_1@2x.jpg 2x" alt="Celiac messenger bag occupy">
                                         </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">День Родждения</span>
-                                            <span class="case-card__title-text">90's pok</span>
-                                        </span>
+                                        <span class="card__title-text">Celiac messenger</span>
                                     </a>
                                 </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price card__price--discount">3 780 ₽</span>
+                                        <span class="card__old-price">5 000 ₽ </span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_4.jpg" srcset="images/content/cards/img_4@2x.jpg 2x" alt="90's pok pok bicycle rights">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
                                         </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Новоселье</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
                                     </a>
                                 </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить"><svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--add_cart is-pressed" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_3.jpg" srcset="images/content/cards/img_3@2x.jpg 2x" alt="90's pok pok bicycle rights">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
                                         </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Коллегам</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
                                     </a>
                                 </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить">
+                                            <svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--added_cart" href="cart.html" title="Товар в корзине">
+                                        <svg class="cart">
+                                            <use xlink:href="#added_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
-                            <article class="case-card" tabindex="0">
-                                <h2 class="case-card__title">
-                                    <a class="case-card__link" href="detail.html">
-                                        <span class="case-card__image-block">
-                                            <img class="case-card__image" src="images/content/cards/img_4.jpg" srcset="images/content/cards/img_4@2x.jpg 2x" alt="90's pok pok bicycle rights">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
                                         </span>
-                                        <span class="case-card__text-block">
-                                            <span class="case-card__tag">Подарок маме</span>
-                                            <span class="case-card__title-text">90's pok pok bicycle rights</span>
-                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
                                     </a>
                                 </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price">7 900 ₽</span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </article>
                         </div>
                     </div>

@@ -1,0 +1,1 @@
+.alt-card{display:-webkit-box;display:-ms-flexbox;display:flex}.alt-card:not(:last-child){margin-bottom:24px}.alt-card__image{width:90px;min-width:90px}.alt-card__info{padding-left:12px}@media (min-width:1024px){.alt-card__image{width:130px;min-width:130px}.alt-card__info{padding-left:24px}}@media (min-width:1440px){.alt-card__info p:not(:last-child){margin-bottom:24px}}
