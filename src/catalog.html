@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Каталог - подарки просто</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+
+    <!--стили подключаемых на страние блоков-->
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/card.css" />
+</head>
+
+<body>
+    //= template/preloader.html
+
+    //= template/sprite.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <div class="catalog">
+                <div class="catalog__filter">
+                    <button class="js-filter-opener catalog__filter-opener" type="button">Фильтр</button>
+                    <div class="filter">
+                        <button class="js-filter-closer filter__closer" type="button" title="Закрыть фильтр">
+                            <svg>
+                                <use xlink:href="#crest"></use>
+                            </svg>
+                        </button>
+                        <form class="filter__inner" action="">
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Цветовая гамма
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner filter__section-inner--bordered is-active">
+                                    <div class="filter__colors">
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--F6A2A2" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--E95F9B" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--A16895" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--F6A2A2" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--E95F9B" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--A16895" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--F6A2A2" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--E95F9B" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--A16895" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--F6A2A2" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--E95F9B" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter__colors-item">
+                                            <label class="filter__color filter__color--A16895" title="Цвет">
+                                                <input type="checkbox" name="color">
+                                                <span class="filter__color-button"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <style>
+                                        .filter__color--F6A2A2 .filter__color-button::after {
+                                            background-color: #F6A2A2
+                                        }
+
+                                        .filter__color--F6A2A2 input[type=checkbox]:checked+.filter__color-button {
+                                            border-color: #F6A2A2
+                                        }
+
+                                        .filter__color--E95F9B .filter__color-button::after {
+                                            background-color: #E95F9B
+                                        }
+
+                                        .filter__color--E95F9B input[type=checkbox]:checked+.filter__color-button {
+                                            border-color: #E95F9B
+                                        }
+
+                                        .filter__color--A16895 .filter__color-button::after {
+                                            background-color: #A16895
+                                        }
+
+                                        .filter__color--A16895 input[type=checkbox]:checked+.filter__color-button {
+                                            border-color: #A16895
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Стоимость
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner filter__section-inner--bordered is-active">
+                                    слайдер стоимости
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Материал
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner is-active">
+                                    <div class="filter__checkboxes">
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Эко / Recycled</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Дерево</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Стекло</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Текстиль</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Металл</span>
+                                        </label>
+                                    </div>
+                                    <button class="filter__show-all" type="button">Показать все</button>
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Тематика набора
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner is-active">
+                                    <div class="filter__checkboxes">
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Морская</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">ЗОЖ</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Здоровье</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Спорт</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Эко</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Тема 6</span>
+                                        </label>
+                                        <label class="filter__checkbox-label">
+                                            <input type="checkbox" />
+                                            <span class="filter__checkbox-icon"></span>
+                                            <span class="filter__checkbox-text">Тема 7</span>
+                                        </label>
+                                    </div>
+                                    <button class="filter__show-all" type="button">Скрыть</button>
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Событие
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner">
+
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Состав
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner">
+
+                                </div>
+                            </div>
+                            <div class="filter__section">
+                                <button class="js-section-toggler filter__section-title" type="button">
+                                    Бренд
+                                    <svg>
+                                        <use xlink:href="#crest"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__section-inner">
+
+                                </div>
+                            </div>
+                            <button class="filter__apply button button--inverted button--animate" type="button" data-text="Показать (68) →"><span>Показать (68) →</span></button>
+                            <button class="filter__reset" type="reset">Сбросить все фильтры (14)</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="catalog__section">
+                    <div class="catalog__tags">
+                        <div class="js-tags-slider tags-slider hide-overflow swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag is-active" href="#">
+                                        Быстрые наборы
+                                        <svg>
+                                            <use xlink:href="#crest"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        До 1000 рублей
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        К новому году
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Эко наборы
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Велком пак
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        VIP наборы
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Пикник
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        До 1000 рублей
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        К новому году
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Эко наборы
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Велком пак
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        VIP наборы
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="catalog__tag" href="#">
+                                        Пикник
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="tags-slider__next" type="button" title="Дальше">
+                                <svg class="arrow">
+                                    <use xlink:href="#arrow_next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog__list">
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">На новый год</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Весна</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Родителям</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">8 марта</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Детям</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Море</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">День рождения</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Творчество</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">На праздник</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Прованс</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Календари</span>
+                            </a>
+                        </div>
+                        <div class="catalog__list-item">
+                            <a class="section-card" href="catalog-section.html">
+                                <span class="section-card__image">
+                                    <img src="images/content/catalog/img_1.jpg" srcset="images/content/catalog/img_1@2x.jpg 2x" alt="alt">
+                                </span>
+                                <span class="section-card__title">Вино</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="catalog__more-block">
+                        <a class="catalog__more button button--inverted" href="javascript:void(0)">Показать ещё 12 из 50</a>
+                        <a class="catalog__to-top" href="javascript:void(0)">
+                            <svg>
+                                <use xlink:href="#chevron_up"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    <!--обязательные скрипты-->
+    //= template/scripts.html
+    <script src="js/filter.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        const tagsSlider = new Swiper('.js-tags-slider', {
+            loop: false,
+            spaceBetween: 12,
+            slidesPerView: 'auto',
+
+            navigation: {
+                nextEl: '.tags-slider__next'
+            }
+        });
+
+        tagsSlider.on('transitionStart', function() {
+            if (tagsSlider.isEnd === true) {
+                $('.tags-slider').removeClass('hide-overflow');
+            } else {
+                $('.tags-slider').addClass('hide-overflow');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

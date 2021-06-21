@@ -1,3 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9">
-	<path d="M4.5,7C4.4,7,4.2,7,4.1,6.9l-4-4C0,2.7,0,2.3,0.1,2.1s0.5-0.2,0.7,0l3.6,3.6l3.6-3.6C8.3,2,8.7,2,8.9,2.1s0.2,0.5,0,0.7l-4,4C4.8,7,4.6,7,4.5,7z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#519D61;}
+</style>
+<path d="M0.3,2.1c0.1,0,0.2,0,0.2,0.1l4,4l4-4c0.1-0.1,0.3-0.1,0.4,0s0.1,0.3,0,0.4L4.7,6.8c-0.1,0.1-0.3,0.1-0.4,0L0.1,2.6C0,2.5,0,2.3,0.1,2.2C0.1,2.1,0.2,2.1,0.3,2.1z"/>
 </svg>

@@ -47,11 +47,22 @@
         justify-content: center;
         margin-left: 14px;
         padding: 0;
+        transition: background-color 0.3s;
         width: 20px;
+
+        &:focus,
+        &:hover {
+            background-color: $brand_rose;
+
+            svg {
+                fill: $brand_green;
+            }
+        }
 
         svg {
             fill: #fff;
             height: 12px;
+            transition: fill 0.3s;
             width: 12px;
         }
     }

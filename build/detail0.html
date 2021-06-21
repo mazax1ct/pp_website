@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Контакты - подарки просто</title>
+    <title>Карточка каталога детально - подарки просто</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -28,10 +28,14 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <!--стили подключаемых на страние блоков-->
-    <link rel="stylesheet" href="css/page-title.css" />
-    <link rel="stylesheet" href="css/contacts.css" />
-    <link rel="stylesheet" href="css/feedback.css" />
-    <link rel="stylesheet" href="css/socials.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/quantity.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/alt-card.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/card.css" />
 </head>
 
 <body>
@@ -124,10 +128,7 @@
               d="M6,11.5c-1.9,0-3.6-1.1-4.5-2.8v1.6c0,0.3-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5V7.4c0-0.3,0.2-0.5,0.5-0.5h2.7c0.3,0,0.5,0.2,0.5,0.5S3.9,7.9,3.7,7.9H2.2c0.7,1.6,2.1,2.6,3.8,2.6c1.8,0,3.5-1.3,4-3.2c0.1-0.3,0.3-0.4,0.6-0.3C10.9,7,11,7.3,11,7.6C10.3,9.9,8.3,11.5,6,11.5z M1.5,5.1c0,0-0.1,0-0.1,0C1.1,5,1,4.7,1,4.4c0.6-2.3,2.7-3.9,5-3.9c1.9,0,3.6,1.1,4.5,2.8V1.7c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5v2.9c0,0.3-0.2,0.5-0.5,0.5H8.3c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h1.4C9.1,2.5,7.6,1.5,6,1.5c-1.8,0-3.5,1.3-4,3.2C1.9,4.9,1.7,5.1,1.5,5.1z" />
         </symbol>
         <symbol id="chevron_down" viewBox="0 0 9 9">
-            <path d="M0.3,2.1c0.1,0,0.2,0,0.2,0.1l4,4l4-4c0.1-0.1,0.3-0.1,0.4,0s0.1,0.3,0,0.4L4.7,6.8c-0.1,0.1-0.3,0.1-0.4,0L0.1,2.6C0,2.5,0,2.3,0.1,2.2C0.1,2.1,0.2,2.1,0.3,2.1z" />
-        </symbol>
-        <symbol id="chevron_up" viewBox="0 0 9 9">
-            <path d="M8.7,6.9c-0.1,0-0.2,0-0.2-0.1l-4-4l-4,4c-0.1,0.1-0.3,0.1-0.4,0S0,6.5,0.1,6.4l4.2-4.2c0.1-0.1,0.3-0.1,0.4,0l4.2,4.2C9,6.5,9,6.7,8.9,6.8C8.9,6.9,8.8,6.9,8.7,6.9z" />
+            <path d="M4.5,7C4.4,7,4.2,7,4.1,6.9l-4-4C0,2.7,0,2.3,0.1,2.1s0.5-0.2,0.7,0l3.6,3.6l3.6-3.6C8.3,2,8.7,2,8.9,2.1s0.2,0.5,0,0.7l-4,4C4.8,7,4.6,7,4.5,7z" />
         </symbol>
         <symbol id="crest" viewBox="0 0 10 10">
             <path
@@ -206,64 +207,253 @@
     </header>
 
     <main class="page-content">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-section.html">Тематические</a></li>
+            <li class="breadcrumbs__item">Bespoke cold-pressed waistcoat</li>
+        </ul>
+
         <div class="container">
-            <h1 class="page-title">Контакты</h1>
-            <div class="contacts">
-                <div class="contacts__column contacts__column--map-block">
-                    <div class="contacts__map"></div>
-                    <p class="contacts__links">
-                        <a class="contacts__link" href="tel:+79995689097">
-                            <svg>
-                                <use xlink:href="#whatsup"></use>
-                            </svg>
-                            8 999 568 90 97
-                        </a>
-                        <a class="contacts__link" href="mailto:mail@email.com">
-                            <svg>
-                                <use xlink:href="#email"></use>
-                            </svg>
-                            mail@email.com
-                        </a>
-                    </p>
-                    <p>
-                        196006, <b>г. Санкт-Петербург</b>, ул. Цветочная, 2В<br>
-                        125040, <b>г. Москва</b>, 1-я ул. Ямского поля, дом 17, корпус 12, этаж 1, оф. № 10
-                    </p>
-                    <div class="socials">
-                        <a class="social-link" href="https://www.instagram.com/toomanygifts.ru/" target="_blank" title="Наш Instagram" rel="nofollow noreferrer noopener">
-                            <svg>
-                                <use xlink:href="#inst"></use>
-                            </svg>
-                        </a>
-                        <a class="social-link" href="https://www.facebook.com/toomanygifts" target="_blank" title="Мы в Facebook" rel="nofollow noreferrer noopener">
-                            <svg>
-                                <use xlink:href="#fb"></use>
-                            </svg>
-                        </a>
+            <div class="side-indents">
+                <div class="detail">
+                    <div class="detail__images">
+                        <div class="js-detail-slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg 2x" alt="alt">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="detail__info">
+                        <div class="detail__title-block">
+                            <h1 class="detail__title">
+                                <button class="detail__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                Bespoke cold-pressed waistcoat
+                            </h1>
+                            <p class="detail__articul">2786-87</p>
+                        </div>
+                        <div class="detail__price-block">
+                            <p class="detail__price detail__price--discount">3 780 ₽</p>
+                            <p class="detail__old-price">5 000 ₽</p>
+                            <p class="detail__discount">30%</p>
+                        </div>
+                        <div class="detail__buy-block">
+                            <div class="quantity">
+                                <button class="quantity__button" type="button" title="Уменьшить">
+                                    <svg>
+                                        <use xlink:href="#minus"></use>
+                                    </svg>
+                                </button>
+                                <input class="quantity__input" type="text" value="1" readonly>
+                                <button class="quantity__button" type="button" title="Увеличить">
+                                    <svg>
+                                        <use xlink:href="#plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <a class="button button--big button--add_cart" href="javascript:void(0)">
+                                <svg class="cart">
+                                    <use xlink:href="#add_cart"></use>
+                                </svg>
+                                Добавить в корзину
+                            </a>
+                        </div>
+                        <div class="tabs">
+                            <ul class="tabs-nav">
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link is-active" href="#" data-href="1">Состав набора</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="2">Описание</a>
+                                </li>
+                                <li class="tabs-nav__item">
+                                    <a class="tabs-nav__link" href="#" data-href="3">Дополнительно</a>
+                                </li>
+                            </ul>
+                            <div class="tabs-list">
+                                <div class="tab is-active" data-target="1">
+                                    <p>
+                                        Vexillologist polaroid next level mustache!<br>
+                                        Roof party salvia cliche waistcoat green juice crucifix flannel<br>
+                                        leggings pinterest hell of franzen blog. Pour-over paleo tbh mustache plaid. 90's taiyaki irony whatever gluten-free succulents pok pok cliche. Typewriter poke fam helvetica af live-edge.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quod dicta, dolore esse, animi repellat soluta. Quod vero architecto suscipit, odio unde optio numquam, natus quia officiis quo, quidem dicta.
+                                    </p>
+                                </div>
+                                <div class="tab" data-target="3">
+                                    <div class="alt-card">
+                                        <div class="alt-card__image"><img src="images/content/detail/img_2.jpg" srcset="images/content/detail/img_2@2x.jpg 2x" alt="alt"></div>
+                                        <div class="alt-card__info">
+                                            <p>Roof party salvia cliche waistcoat green juice crucifix flannel leggings pinterest hell of franzen blog.</p>
+                                            <p>Размеры: 30х40х70 см</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contacts__column contacts__column--form-block">
-                    <p>Мы обожаем получать письма и непременно вам ответим!</p>
-                    <form class="feedback" action="" method="">
-                        <label class="input-label">
-                            <input class="input" type="text" name="name" value="" placeholder="Ваше имя" />
-                        </label>
-                        <label class="input-label">
-                            <input class="input" type="text" name="email" value="" placeholder="E-mail" />
-                        </label>
-                        <label class="input-label">
-                            <input class="input" type="text" name="phone" value="" placeholder="Номер телефона" />
-                        </label>
-                        <label class="input-label">
-                            <textarea class="textarea textarea--big" name="message" placeholder="Ваше сообщение"></textarea>
-                        </label>
-                        <p class="feedback__note">Нажимая “Отправить” я даю согласие на обработку персональных данных<br> в соответствии с условиями <a href="terms.html" target="_blank"><b>Пользовательского Соглашения</b></a></p>
-                        <p class="feedback__button-block">
-                            <button class="button button--animate" type="submit" data-text="Отправить →">
-                                <span>Отправить →</span>
-                            </button>
-                        </p>
-                    </form>
+
+                <h2>Вас может заинтересовать</h2>
+                <div class="js-cards-slider slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">30 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_1.jpg" srcset="images/content/cards/img_1@2x.jpg 2x" alt="Celiac messenger bag occupy">
+                                        </span>
+                                        <span class="card__title-text">Celiac messenger</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price card__price--discount">3 780 ₽</span>
+                                        <span class="card__old-price">5 000 ₽ </span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить"><svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--add_cart is-pressed" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler" type="button" title="Добавить в избранное">
+                                    <svg>
+                                        <use xlink:href="#add_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="quantity">
+                                        <button class="quantity__button" type="button" title="Уменьшить">
+                                            <svg>
+                                                <use xlink:href="#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="quantity__input" type="text" value="1" readonly tabindex="-1">
+                                        <button class="quantity__button" type="button" title="Увеличить">
+                                            <svg>
+                                                <use xlink:href="#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button button--added_cart" href="cart.html" title="Товар в корзине">
+                                        <svg class="cart">
+                                            <use xlink:href="#added_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="card" tabindex="0">
+                                <span class="card__discount">10 %</span>
+                                <button class="card__favorite-toggler is-active" type="button" title="Убрать из избранного">
+                                    <svg>
+                                        <use xlink:href="#in_favorite"></use>
+                                    </svg>
+                                </button>
+                                <h2 class="card__title">
+                                    <a class="card__link" href="detail.html">
+                                        <span class="card__image-block">
+                                            <img class="card__image" src="images/content/cards/img_2.jpg" srcset="images/content/cards/img_2@2x.jpg 2x" alt="jean shorts DIY microdosing">
+                                        </span>
+                                        <span class="card__title-text">jean shorts DIY microdosing</span>
+                                    </a>
+                                </h2>
+                                <div class="card__buy-block">
+                                    <div class="card__price-block">
+                                        <span class="card__price">7 900 ₽</span>
+                                    </div>
+                                    <a class="button button--add_cart" href="javascript:void(0)" title="Добавить в корзину">
+                                        <svg class="cart">
+                                            <use xlink:href="#add_cart"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="slider__prev" type="button" title="Назад">
+                        <svg class="arrow">
+                            <use xlink:href="#arrow_prev"></use>
+                        </svg>
+                    </button>
+                    <button class="slider__next" type="button" title="Вперёд">
+                        <svg class="arrow">
+                            <use xlink:href="#arrow_next"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -326,6 +516,36 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/preloader.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        const detailSlider = new Swiper('.js-detail-slider', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+
+        const cardsSlider = new Swiper('.js-cards-slider', {
+            loop: true,
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                },
+                1023: {
+                    slidesPerView: 3
+                },
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
+            navigation: {
+                nextEl: '.slider__next',
+                prevEl: '.slider__prev',
+            }
+        });
+    </script>
+    <script src="js/tabs.js"></script>
 
 </body>
 
