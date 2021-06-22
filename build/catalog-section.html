@@ -462,7 +462,7 @@
                 </div>
                 <div class="catalog__section">
                     <div class="catalog__tags">
-                        <div class="js-tags-slider tags-slider hide-overflow swiper-container">
+                        <div class="js-tags-slider tags-slider overflow-end swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a class="catalog__tag is-active" href="#">
@@ -533,7 +533,12 @@
                                     </a>
                                 </div>
                             </div>
-                            <button class="tags-slider__next" type="button" title="Дальше">
+                            <button class="tags-slider__prev" type="button" title="Назад">
+                                <svg class="arrow">
+                                    <use xlink:href="#arrow_prev"></use>
+                                </svg>
+                            </button>
+                            <button class="tags-slider__next" type="button" title="Вперёд">
                                 <svg class="arrow">
                                     <use xlink:href="#arrow_next"></use>
                                 </svg>
@@ -919,16 +924,31 @@
             slidesPerView: 'auto',
 
             navigation: {
+                prevEl: '.tags-slider__prev',
                 nextEl: '.tags-slider__next'
             }
         });
 
-        tagsSlider.on('transitionStart', function() {
+        tagsSlider.on('slideChange', function() {
             if (tagsSlider.isEnd === true) {
-                $('.tags-slider').removeClass('hide-overflow');
+                $('.tags-slider').removeClass('overflow-end');
             } else {
-                $('.tags-slider').addClass('hide-overflow');
+                $('.tags-slider').addClass('overflow-end');
             }
+
+            if (tagsSlider.isBeginning === true) {
+                $('.tags-slider').removeClass('overflow-start');
+            } else {
+                $('.tags-slider').addClass('overflow-start');
+            }
+        });
+
+        tagsSlider.on('reachBeginning', function() {
+            $('.tags-slider').removeClass('overflow-start');
+        });
+
+        tagsSlider.on('reachEnd', function() {
+            $('.tags-slider').removeClass('overflow-end');
         });
     </script>
 

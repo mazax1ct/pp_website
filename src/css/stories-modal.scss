@@ -158,6 +158,25 @@
         }
     }
 
+    &__svg {
+        bottom: 24px;
+        display: none;
+        left: 0;
+        position: absolute;
+        padding-left: 24px;
+        top: auto;
+        width: 100%;
+        z-index: 1;
+        @media(min-width: $md) {
+            display: block;
+        }
+
+        svg {
+            fill: none;
+            width: 100%;
+        }
+    }
+
     &__list {
         top: 60px;
         left: 0;
@@ -175,6 +194,10 @@
             .stories-modal__video {
                 padding-top: 10px;
                 padding-bottom: 10px;
+                @media(min-width: 1440px) and (min-height: 700px) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
             }
         }
     }
@@ -189,11 +212,11 @@
         height: 100%;
         margin: auto;
         max-height: 475px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 70px;
+        padding-bottom: 70px;
         transition: padding 0.3s;
         width: 100%;
-        @media(min-width: 1900px) and (min-height: 900px) {
+        @media(min-width: 1440px) and (min-height: 700px) {
             max-height: 570px;
         }
 
@@ -201,5 +224,22 @@
             height: 100%;
             width: auto;
         }
+    }
+}
+
+.magic-line {
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    stroke: #fff;
+}
+
+.animated .magic-line {
+    opacity: 1;
+    animation-name: line;
+}
+@keyframes line {
+    100% {
+        stroke-dashoffset: 0;
     }
 }
